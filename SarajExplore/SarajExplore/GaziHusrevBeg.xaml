@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.GaziHusrevBeg"
+             BackgroundImageSource="ghbm2.jpg">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Gazi Husrev-Beg Mosque" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="20">
+                <Frame BackgroundColor="#AFcccccc" Padding="0" Margin="20,20,20,0" CornerRadius="8">
+                    <StackLayout>
+                        <Label Text="	•	INFO	•	"
+                               HorizontalTextAlignment="Center" FontSize="30" TextColor="Black" FontAttributes="Bold" Margin="10,0"/>
+                        <Label Text="Ticket: 3KM per person&#10;Working hours: &#10;Every day: 9am-12am; 14:30pm-16pm; 17:30pm-19pm" 
+                               FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,0,10,10"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#AFcccccc" Padding="0" Margin="20,0" CornerRadius="8">
+                    <Label Text="Gazi Husrev-beg Mosque is a mosque in the city of Sarajevo, Bosnia and Herzegovina. It is located in the Baščaršija neighborhood in the Stari Grad municipality and, being one of the main architectural monuments in the town. The Gazi Husrev-beg Mosque was built in 1530 as the central object of the Beg's endowment, which also included a maktab and a madrasa (Islamic primary and secondary schools), a bezistan (vaulted marketplace), a hammam (public bathplace) etc. The foundation of this waqf by the contemporary Ottoman governor of Bosnia had a crucial point in the development of the town, but the architect's name is unknown. Bey’s Mosque was designed by Adžem Esir Ali, a Persian from Tabriz, who was the chief architect in the Ottoman Empire at that time."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,5,10,10"/>
+                </Frame>
+                <Frame Padding="0" Margin="20,0" CornerRadius="8">
+                    <Image Source="ghbm3.jpg"/>
+                </Frame>
+                <Frame BackgroundColor="#AFcccccc" Padding="0" Margin="20,0" CornerRadius="8">
+                    <Label Text="Fun fact is that this mosque was the first mosque in the world to receive electricity and electric illumination in 1898 during the period of Austro-Hungarian Empire. The mosque belongs to the type of complex-spaced, multi-domed mosques and it is a represent of the Early Period of Classical Ottoman Architecture. During the Siege of Sarajevo in Bosnian war the vaqf complex was fired by more than thousand grenades but, thanks to its solid structure and two meter thick walls, the mosque survived. After the war it was thoroughly repaired using the original ornaments found on the walls."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,5,10,10"/>
+                </Frame>
+                <Frame Padding="0" Margin="20,0" CornerRadius="8">
+                    <Image Source="ghbm4.jpg"/>
+                </Frame>
+                <Frame BackgroundColor="#AFcccccc" Padding="0" Margin="20,0" CornerRadius="8">
+                    <Label Text="The Sarajevo Clock Tower is a clock tower in Sarajevo, the capital of Bosnia and Herzegovina. It is located beside Gazi Husrev-beg Mosque and is the tallest of 21 clock towers built in the country at 30 m. The clock shows lunar time, in which the hands indicate 12 o'clock at the moment of sunset, the time of the Muslim Maghrib prayer. A caretaker sets the clock's time manually once a week."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,5,10,10"/>
+                </Frame>
+                <Frame Padding="0" Margin="20,0" CornerRadius="8">
+                    <Image Source="ghbm5.jpg"/>
+                </Frame>
+                <Grid HorizontalOptions="CenterAndExpand" ColumnSpacing="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Text="Show more" FontSize="20" WidthRequest="150" HorizontalOptions="CenterAndExpand" TextTransform="None"
+                        HeightRequest="50" Margin="0,0,0,15" CornerRadius="20" TextColor="Black" 
+                        FontAttributes="Bold" Clicked="openMore">
+                        <Button.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#808080"  Offset="0.0"/>
+                                <GradientStop Color="#b3b3b3" Offset="0.25"/>
+                                <GradientStop Color="#cccccc" Offset="0.5"/>
+                                <GradientStop Color="#b3b3b3" Offset="0.75"/>
+                                <GradientStop Color="#808080"  Offset="1.0"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button Grid.Column="1" Text="Show on map" FontSize="20" WidthRequest="150" HorizontalOptions="CenterAndExpand" TextTransform="None"
+                        HeightRequest="50" Margin="0,0,0,15" CornerRadius="20" TextColor="Black" 
+                        FontAttributes="Bold" Clicked="openMap">
+                        <Button.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#808080"  Offset="0.0"/>
+                                <GradientStop Color="#b3b3b3" Offset="0.25"/>
+                                <GradientStop Color="#cccccc" Offset="0.5"/>
+                                <GradientStop Color="#b3b3b3" Offset="0.75"/>
+                                <GradientStop Color="#808080"  Offset="1.0"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

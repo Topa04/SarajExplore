@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.Hotel">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Hotels" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="0">
+                <!-- Hotel No.1 -->
+                <StackLayout HeightRequest="380">
+                    <Image Source="he.jpg" HeightRequest="380" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#aF8fb8e1" Margin="20,-370,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Hotel Europe" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Located in the very heart of the city of Sarajevo, just a few steps away from the touristy old city core, this Austro-Hungarian building attracts attention with its luxurious appearance. walking into the lobby, every stay at Hotel Europe is like a journey led by friendly staff. You will be greeted by light music and an attractive interior worth exploring. The spirit of the past is preserved in the traditional part of the hotel with ornate decor colored over the years, while the new part is done in a modern style and is characterized by great beauty." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="10" Clicked="openLink" HorizontalOptions="EndAndExpand" BackgroundColor="#aF8fb8e1" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" Margin="0,0,0,0"/>
+                        <Button Grid.Column="1" TabIndex="20" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#aF8fb8e1" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" Margin="0,0,0,0"/>
+                    </Grid>
+                </StackLayout>
+                <!-- Hotel No.2 -->
+                <StackLayout HeightRequest="380">
+                    <Image Source="sh.jpg" HeightRequest="380" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#bFF8fbd7" Margin="20,-370,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Swissotel Sarajevo" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Located in the city center, where hospitality is part of the nature of Bosnia and Herzegovina. Swissotel Sarajevo offers contemporary and modern designed rooms with stunning views, free Wi-Fi, state of the art Wellness and Spa facilities, as well as two restaurants. All of the 218 comfortable rooms and suites of the Swissotel Sarajevo feature a flat-screen TV, coffee and tea making facilities, large windows with accompanying seating duvets, walk in shower and an electronic safe." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="11" Clicked="openLink" HorizontalOptions="EndAndExpand" BackgroundColor="#bFF8fbd7" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" Margin="0,0,0,0"/>
+                        <Button Grid.Column="1" TabIndex="21" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#bFF8fbd7" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" Margin="0,0,0,0"/>
+                    </Grid>
+                </StackLayout>
+                <!-- Hotel No.3 -->
+                <StackLayout HeightRequest="380">
+                    <Image Source="hh.jpg" HeightRequest="380" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#9Ffde380" Margin="20,-370,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Hotel Hills Sarajevo Congress And Thermal Spa Resort" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Hotel Hills, Thermal and Spa Resort Sarajevo is located in the center of the green oasis of Sarajevo Hotel Hills, Thermal and Spa Resort Sarajevo includes 330 rooms and suites, multipurpose Congress center with modern conference technology, Wellness, Spa and Fitness Health center, indoor and outdoor swimming pools, Adrenalin park for children and adults on impressive 2200 square meters, Wedding halls..." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="12" Clicked="openLink" HorizontalOptions="EndAndExpand" BackgroundColor="#9Ffde380" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" Margin="0,0,0,0"/>
+                        <Button Grid.Column="1" TabIndex="22" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#9Ffde380" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" Margin="0,0,0,0"/>
+                    </Grid>
+                </StackLayout>
+                <!-- Hotel No.4 -->
+                <StackLayout HeightRequest="380">
+                    <Image Source="cm.jpg" HeightRequest="380" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#aF9fccfa" Margin="20,-370,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Courtyard by Marriott Sarajevo" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Courtyard Sarajevo welcomes both business and leisure travelers to Bosnia and Herzegovina with modern hotel rooms and suites, an unbeatable location in the city center and first-class service. Each of our spacious hotel rooms offers thoughtful amenities like a 42-inch flat-screen TV, complimentary Wi-Fi access, a mini-fridge and a coffee maker. Partake in specialty cocktails at our immaculately decorated, opulent S One Sky Lounge, which boasts sweeping panoramic views of Bosnia and Herzegovina's capital city. " TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="13" Clicked="openLink" HorizontalOptions="EndAndExpand" BackgroundColor="#aF9fccfa" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" Margin="0,0,0,0"/>
+                        <Button Grid.Column="1" TabIndex="23" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#aF9fccfa" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" Margin="0,0,0,0"/>
+                    </Grid>
+                </StackLayout>
+                <!-- Hotel No.5 -->
+                <StackLayout HeightRequest="380">
+                    <Image Source="hc.jpg" HeightRequest="380" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#bFb3b3b3" Margin="20,-370,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Hotel Central Sarajevo" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="If you’re looking for a hotel where you’ll experience an overwhelming sense of pure comfort and relaxation, you’ll love Hotel Central in Sarajevo. Artistically inspired, this landmark hotel has been totally redesigned to bring you the absolute best hotel experience. Relax in our luxurious 25 meter pool. Stay in shape at our world-class health club. Spread over three floors, our purpose built fitness club is packed with the latest fitness and body shaping equipment. " TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="14" Clicked="openLink" HorizontalOptions="EndAndExpand" BackgroundColor="#bFb3b3b3" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" Margin="0,0,0,0"/>
+                        <Button Grid.Column="1" TabIndex="24" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#bFb3b3b3" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" Margin="0,0,0,0"/>
+                    </Grid>
+                </StackLayout>
+                <!-- Hotel No.6 -->
+                <StackLayout HeightRequest="380">
+                    <Image Source="hp.jpg" HeightRequest="380" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#9Fdbcba1" Margin="20,-370,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Hotel President Sarajevo" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Hotel President is located in the heart of Old Town of Sarajevo city. All significant touristic attractions such as Bey’s and Tzar’s mosque, City Hall, Latin Bridge, Sebilj Fountain, Cathedral, Orthodox Church and Jewish Temple are within just a few minutes of walk. Well connected public transport allows guests to explore all parts of the city. Hotel is located 10 km away from Sarajevo Airport and just 30 minutes of drive from Olympic mountains Bjelašnica, Jahorina and Igman. Trebević mountain is just 10 min of drive from the hotel. " TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="15" Clicked="openLink" HorizontalOptions="EndAndExpand" BackgroundColor="#9Fdbcba1" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" Margin="0,0,0,0"/>
+                        <Button Grid.Column="1" TabIndex="25" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#9Fdbcba1" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" Margin="0,0,0,0"/>
+                    </Grid>
+                </StackLayout>
+                <!-- Hotel No.7 -->
+                <StackLayout HeightRequest="380">
+                    <Image Source="ha.jpg" HeightRequest="380" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#9F9fccfa" Margin="20,-370,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Hotel Aziza Sarajevo" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="We offer the hospitality and care of our family in the intimate atmosphere of a home, according to the high standards of international hotels. Our guests are our friends, who return to our hotel as if it were their home. The story of the love of Mehmed and Aziza, of the family they nurture, of the beloved woman whose name it bears - this is the story of Hotel 'Aziza', located in one of the old Sarajevo mahals. The hotel is located in the old residential part of Sarajevo, and all rooms are very quiet and pleasant to stay in. " TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="16" Clicked="openLink" HorizontalOptions="EndAndExpand" BackgroundColor="#9F9fccfa" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" Margin="0,0,0,0"/>
+                        <Button Grid.Column="1" TabIndex="26" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#9F9fccfa" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" Margin="0,0,0,0"/>
+                    </Grid>
+                </StackLayout>
+                <!-- Hotel No.8 -->
+                <StackLayout HeightRequest="380">
+                    <Image Source="oth.jpg" HeightRequest="380" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#aFb3b3b3" Margin="20,-370,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Old Town Hotel Sarajevo" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Hotel old town is located in the heart of the Old Town on Bascarsia, which offers you a pleasant and unforgettable stay with its quality accommodation. It offers elegant, bright rooms with bathroom, air conditioning, TV, mini bar, and free wireless internet access throughout the building. In the immediate vicinity there are many important sights from the distant and recent past. For business people, the proximity of all administrative centers enables the stay to be as successful as possible in a business sense. " TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="17" Clicked="openLink" HorizontalOptions="EndAndExpand" BackgroundColor="#aFb3b3b3" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" Margin="0,0,0,0"/>
+                        <Button Grid.Column="1" TabIndex="27" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#aFb3b3b3" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" Margin="0,0,0,0"/>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

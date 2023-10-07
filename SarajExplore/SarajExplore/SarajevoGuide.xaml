@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.SarajevoGuide"
+             BackgroundColor="White">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Tour Guides" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+            <ScrollView.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#8fFDC830"  Offset="0.0"/>
+                    <GradientStop Color="#8fF37335" Offset="0.5"/>
+                    <GradientStop Color="#8fFDC830"  Offset="1.0"/>
+                </LinearGradientBrush>
+            </ScrollView.Background>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Frame Margin="10" CornerRadius="5" Padding="0" HeightRequest="250">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="tour1"/>
+                </Frame.GestureRecognizers>
+                <StackLayout>
+                    <Image Source="t1.jpg" Aspect="AspectFill" HeightRequest="250"/>
+                    <Label BackgroundColor="#5f000000" Text="Tour 1" TextColor="#ECBC4E" Margin="20,-65,0,0" FontSize="30" FontAttributes="Bold"/>
+                </StackLayout>
+            </Frame>
+            <Frame Margin="10" CornerRadius="5" Padding="0" HeightRequest="250">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer/>
+                </Frame.GestureRecognizers>
+                <StackLayout>
+                    <Image Source="t2.jpg" Aspect="AspectFill" HeightRequest="250"/>
+                        <Label BackgroundColor="#5f000000" Text="Tour 2" TextColor="#ECBC4E" Margin="20,-65,0,0" FontSize="30" FontAttributes="Bold"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

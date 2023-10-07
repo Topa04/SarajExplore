@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.Vijecnica"
+             BackgroundImageSource="ch2.jpg">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="City Hall" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Spacing="20">
+                <Frame BackgroundColor="#7FFfe584" Padding="0" Margin="20,20,20,0" CornerRadius="8">
+                    <StackLayout Spacing="0">
+                        <Label Text="	•	INFO	•	" FontSize="30" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold"/>
+                        <Label Text="Tickets: 
+                    &#10;Single ticket: 10KM ;
+                    &#10;Group ticket 10+ persons: 8KM ;
+                    &#10;Childeen, studnets, Pensioners, Disabled persons: 5KM ;
+                    &#10;Newlyweds photo session: 82KM ;" VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontAttributes="Bold"  FontSize="25" TextColor="Black" Margin="10,5,10,0"/>
+                        <Label Text="Working hours:&#10;Every day: 9am-17pm" FontSize="25" TextColor="Black" 
+                               FontAttributes="Bold" Margin="10,5"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#7FFfe584" Padding="0" Margin="20,0" CornerRadius="8">
+                    <Label Text="City Hall in Sarajevo, also known as Vijećnica, is breathtaking architectual gem that showcases a harmonious blend of Moorish and Austro-Hungarian influences. Its magnificent facade and intricate interior desing make it a must-visit landmark, offering a glimpse into the city's rich history and cultural heritage. As a sybol of resilience, the City Hall stands tall, having survived the devestating Bosnian War and painstakingly restored to its former glory, serving as a testamet to Sarajevo's enduring spirit."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,5,10,10"/>
+                </Frame>
+                <Frame Padding="0" Margin="20,0" CornerRadius="8">
+                    <Image Source="ch3.jpg"/>
+                </Frame>
+                <Frame BackgroundColor="#7FFfe584" Padding="0" Margin="20,0" CornerRadius="8">
+                    <Label Text="It was initially the largest and most representative building of the Austro-Hungarian period in Sarajevo and served as the city hall. The building was reopened on 9 May 2014. It is the current seat and headquarters of the Mayor of Sarajevo, as well as the Sarajevo City Council. Building works began in 1892 and were completed in 1894, at a cost of 984,000 crowns, with 32,000 crowns provided for fixtures and fittings. It was formally opened 20 April 1896, and handed over to the City Authority, which occupied the property until 1949, when it was handed over to the National and University Library of Bosnia and Herzegovina.  "
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,5,10,10"/>
+                </Frame>
+                <Frame Padding="0" Margin="20,0" CornerRadius="8">
+                    <Image Source="ch4.jpg"/>
+                </Frame>
+                <Frame BackgroundColor="#7FFfe584" Padding="0" Margin="20,0" CornerRadius="8">
+                    <Label Text="On 25 August 1992, Serbian shelling during the Siege of Sarajevo caused the complete destruction of the library; among the losses were about 700 manuscripts and incunabula and a unique collection of Bosnian serial publications, some from the middle of the 19th century Bosnian cultural revival. Everything that was possible to restore has been done so, while those things that were not possible to save have been made anew through special molds. The whole reconstruction and restoration process was predicted to cost about KM 25 million (about €13 million). After it was repaired, the building, now a national monument, has been used for variety of events. Its space has been be used for various protocol events for all levels of government, concerts and exhibitions."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,5,10,10"/>
+                </Frame>
+                <Grid HorizontalOptions="CenterAndExpand" ColumnSpacing="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Text="Show more" FontSize="20" WidthRequest="150" HorizontalOptions="CenterAndExpand" 
+                        HeightRequest="50" Margin="0,0,0,20" CornerRadius="20" TextColor="Black" TextTransform="None"
+                        FontAttributes="Bold" Clicked="openMore">
+                        <Button.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#f9b16e"  Offset="0.0"/>
+                                <GradientStop Color="#fbd07c" Offset="0.25"/>
+                                <GradientStop Color="#ffeda0" Offset="0.5"/>
+                                <GradientStop Color="#fbd07c" Offset="0.75"/>
+                                <GradientStop Color="#f9b16e"  Offset="1.0"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button Grid.Column="1" Text="Show on map" FontSize="20" WidthRequest="150" 
+                            HorizontalOptions="CenterAndExpand" HeightRequest="50" Margin="0,0,0,20" 
+                            CornerRadius="20" TextColor="Black" TextTransform="None"
+                        FontAttributes="Bold" Clicked="openMap">
+                        <Button.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#f9b16e"  Offset="0.0"/>
+                                <GradientStop Color="#fbd07c" Offset="0.25"/>
+                                <GradientStop Color="#ffeda0" Offset="0.5"/>
+                                <GradientStop Color="#fbd07c" Offset="0.75"/>
+                                <GradientStop Color="#f9b16e"  Offset="1.0"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </Grid>
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

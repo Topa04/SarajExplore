@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.Culture"
+             BackgroundImageSource="pozadinaBlur.jpg">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Culture" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <StackLayout>
+                <Frame Margin="10" CornerRadius="5" Padding="0" HeightRequest="250">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="vijecnicaMore"/>
+                        </Frame.GestureRecognizers>
+                        <StackLayout>
+                            <Image Source="ch1.jpg" />
+                            <Label BackgroundColor="#5f000000"  Text="City Hall" TextColor="White" Margin="20,-90,0,0" FontSize="30" FontAttributes="Bold"/>
+                        </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout>
+                    <Frame Margin="10" CornerRadius="5" Padding="0" HeightRequest="250">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="inatkucaMore"/>
+                        </Frame.GestureRecognizers>
+                        <StackLayout>
+                            <Image Source="hs1.jpg"/>
+                            <Label BackgroundColor="#5f000000" Text="House of spite" TextColor="White" Margin="20,-90,0,0" FontSize="30" FontAttributes="Bold"/>
+                        </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout>
+                    <Frame Margin="10" CornerRadius="5" Padding="0" HeightRequest="250">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="sebiljMore"/>
+                        </Frame.GestureRecognizers>
+                        <StackLayout>
+                            <Image Source="s1.jpg" />
+                            <Label BackgroundColor="#5f000000" Text="Sebilj" TextColor="White" Margin="20,-90,0,0" FontSize="30" FontAttributes="Bold"/>
+                        </StackLayout>
+                </Frame>
+            </StackLayout>
+
+                <StackLayout>
+                    <Frame Margin="10" CornerRadius="5" Padding="0" HeightRequest="250">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="bascarsijaMore"/>
+                        </Frame.GestureRecognizers>
+                        <StackLayout>
+                            <Image Source="b1.jpg" Aspect="AspectFill" HeightRequest="250" />
+                            <Label BackgroundColor="#5f000000" Text="Baščaršija" TextColor="White" Margin="20,-70,0,0" FontSize="30" FontAttributes="Bold"/>
+
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame Margin="10" CornerRadius="5" Padding="0" HeightRequest="250">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ghbmMore"/>
+                        </Frame.GestureRecognizers>
+                        <StackLayout>
+                            <Image Source="ghbm1.jpg" Margin="0,-90,0,0"/>
+                            <Label BackgroundColor="#5f000000" Text="Gazi Husrev-Beg Mosque" TextColor="White" Margin="20,-200,0,0" FontSize="30" FontAttributes="Bold"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame Margin="10" CornerRadius="5" Padding="0" HeightRequest="250">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="shkatedralaMore"/>
+                        </Frame.GestureRecognizers>
+                        <StackLayout>
+                            <Image Source="shc1.jpg" Margin="0,0,0,0"/>
+                            <Label BackgroundColor="#5f000000" Text="Sacred Heart Cathedral" TextColor="White" Margin="20,-70,0,0" FontSize="30" FontAttributes="Bold" />
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame Margin="10" CornerRadius="5" Padding="0" HeightRequest="250">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="katedralaMore"/>
+                        </Frame.GestureRecognizers>
+                        <StackLayout>
+                            <Image Source="ccnt1.jpg" Margin="0,0,0,0"/>
+                            <Label BackgroundColor="#5f000000" Text="Cathedral Church of the Nativity of the Theotokos" TextColor="White" Margin="20,-110,0,0" FontSize="30" FontAttributes="Bold"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame Margin="10" CornerRadius="5" Padding="0" HeightRequest="250">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="titovaMore"/>
+                        </Frame.GestureRecognizers>
+                        <StackLayout>
+                            <Image Source="ts1.jpg" Margin="0,-140,0,0"/>
+                            <Label BackgroundColor="#5f000000" Text="Titova Street" TextColor="White" Margin="20,-170,0,0" FontSize="30" FontAttributes="Bold"/>
+
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame Margin="10" CornerRadius="5" Padding="0" HeightRequest="250">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="vatraMore"/>
+                        </Frame.GestureRecognizers>
+                        <StackLayout>
+                            <Image Source="el1.jpg" Margin="0,-210,0,0"/>
+                            <Label BackgroundColor="#5f000000" Text="Eternal Flame" TextColor="White" Margin="20,-135,0,0" FontSize="30" FontAttributes="Bold"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame Margin="10" CornerRadius="5" Padding="0" HeightRequest="250">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="museumMore"/>
+                        </Frame.GestureRecognizers>
+                        <StackLayout>
+                            <Image Source="museum.jpg" Margin="0,0,0,0" HeightRequest="250" Aspect="AspectFill"/>
+                            <Label BackgroundColor="#5f000000" Text="Museums" TextColor="White" Margin="20,-60,0,0" FontSize="30" FontAttributes="Bold"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

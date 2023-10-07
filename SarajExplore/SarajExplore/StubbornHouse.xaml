@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.StubbornHouse"
+             BackgroundImageSource="hs2.jpg">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="House of Spite" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Spacing="20">
+                <Frame BackgroundColor="#4F9fccfa" Padding="0" Margin="20,20,20,10" CornerRadius="8">
+                    <StackLayout>
+                    <Label Text="	•	INFO	•	"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="30" TextColor="White" FontAttributes="Bold" Margin="10,0"/>
+                        <Label Text="Working hours: &#10;Tue-Sun: 13pm-22pm; Mon: closed" 
+                               FontSize="25" TextColor="White" FontAttributes="Bold" Margin="10,0,10,10"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#4F9fccfa" Padding="0" Margin="20,0" CornerRadius="8">
+                    <Label Text="House of Spite, located in Sarajevo, is a charming and qoirky house that tells a tale of determination and defiance. Built in the 19th century, it stands as a symbol of stubborness, as it was originally constructed by a man who refused to move his property to make way for a new road. Today, House of Spite serves as a popular restaurant where visitors can enjoy delicious Bosnian cuisine while immersing themselves in the history and character od this uniyue landmark."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="White" FontAttributes="Bold" Margin="10,0"/>
+            </Frame>
+            <Frame Padding="0" Margin="20,0" CornerRadius="8">
+                    <Image Source="hs3.jpg"/>
+            </Frame>
+                <Frame BackgroundColor="#4F9fccfa" Padding="0" Margin="20,0" CornerRadius="8">
+                    <Label Text="Spite house is a facility in Sarajevo located across from the City Hall, on the very bank of the Miljacka River. When the location of construction of the City Hall in Sarajevo, on the right bank of Miljacka, was determined, the Austro-Hungarian authorities concluded that due to the construction it was necessary to demolish two restaurants and one house. The owner of that house was an old Benderija, the native of Sarajevo. He didn't let his house collapse for any reason. Therefore, after long negotiations, he demanded that they pay him in ducats and that they transfer his house to the other side of the coast, brick by brick. They did it and it's been called The Spite House ever since. Many say this is proof of Bosnian stubbornness."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="White" FontAttributes="Bold" Margin="10,0"/>
+                </Frame>
+                <Frame Padding="0" Margin="20,0" CornerRadius="8">
+                    <Image Source="hs4.jpg"/>
+                </Frame>
+                <Grid HorizontalOptions="CenterAndExpand" ColumnSpacing="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Text="Show more" FontSize="20" TextTransform="None" WidthRequest="150" HorizontalOptions="CenterAndExpand" HeightRequest="50" Margin="0,0,0,15" CornerRadius="20" TextColor="White" FontAttributes="Bold" Clicked="openMore">
+                        <Button.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#438fbc"  Offset="0.0"/>
+                                <GradientStop Color="#6eb0ce" Offset="0.25"/>
+                                <GradientStop Color="#9bd4ee" Offset="0.5"/>
+                                <GradientStop Color="#6eb0ce" Offset="0.75"/>
+                                <GradientStop Color="#438fbc"  Offset="1.0"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button Grid.Column="1" Text="Show on map" FontSize="20" TextTransform="None" WidthRequest="150" HorizontalOptions="CenterAndExpand" HeightRequest="50" Margin="0,0,0,15" CornerRadius="20" TextColor="White" FontAttributes="Bold" Clicked="openMap">
+                        <Button.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#438fbc"  Offset="0.0"/>
+                                <GradientStop Color="#6eb0ce" Offset="0.25"/>
+                                <GradientStop Color="#9bd4ee" Offset="0.5"/>
+                                <GradientStop Color="#6eb0ce" Offset="0.75"/>
+                                <GradientStop Color="#438fbc"  Offset="1.0"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

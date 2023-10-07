@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.TransportM">
+    <ContentPage.Content>
+        <StackLayout Spacing="20">
+            <StackLayout.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#ffffff"  Offset="0.0"/>
+                    <GradientStop Color="#2596be" Offset="0.5"/>
+                    <GradientStop Color="#ffffff"  Offset="1.0"/>
+                </LinearGradientBrush>
+            </StackLayout.Background>
+            <Frame Padding="0" Margin="20,20,20,0" CornerRadius="10" BackgroundColor="#e2eff3">
+                <StackLayout>
+                    <Label Text="VIJEĆNICA – BJELAŠNICA" TextColor="Black" FontSize="30" FontAttributes="Bold" Margin="10,0"/>
+                    <Label Text="Every day @ 08:30 &#10;Ticket price: &#10;one-way ticket 4.30 KM (3.20 KM children);&#10;return ticket 7.40 KM (5.30 KM children)" TextColor="Black" FontSize="20" Margin="10,0"/>
+                    <Button Text="Show starting point" Clicked="Button_Clicked" TabIndex="1" FontSize="20" TextColor="Black" FontAttributes="Bold" TextTransform="None" Margin="20,0,20,10" CornerRadius="10">
+                        <Button.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#b5bfc2"  Offset="0.0"/>
+                                <GradientStop Color="#cbd7db" Offset="0.5"/>
+                                <GradientStop Color="#b5bfc2"  Offset="1.0"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </StackLayout>
+            </Frame>
+            <Frame Padding="0" Margin="20,0" CornerRadius="10" BackgroundColor="#e2eff3">
+                <StackLayout>
+                    <Label Text="SARAJEVO – JAHORINA " TextColor="Black" FontSize="30" FontAttributes="Bold" Margin="10,0"/>
+                    <Label Text="Weekend &#10;Istočno Sarajevo (autobuska stanica)  08:15 &#10;Sarajevo (Zemaljski muzej) 08:45&#10;Ticket price: 6.00 KM (a return ticket)" TextColor="Black" FontSize="20" Margin="10,0"/>
+                    <Button Text="Show starting point" Clicked="Button_Clicked" TabIndex="2" FontSize="20" TextColor="Black" FontAttributes="Bold" TextTransform="None"  Margin="20,0,20,10" CornerRadius="10">
+                        <Button.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#b5bfc2"  Offset="0.0"/>
+                                <GradientStop Color="#cbd7db" Offset="0.5"/>
+                                <GradientStop Color="#b5bfc2"  Offset="1.0"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </StackLayout>
+            </Frame>
+            <Frame Padding="0" Margin="20,0" CornerRadius="10" BackgroundColor="#e2eff3">
+                <StackLayout>
+                    <Label Text="SARAJEVO CABLE CAR" TextColor="Black" FontSize="30" FontAttributes="Bold" Margin="10,0"/>
+                    <Label Text="Every day &#10;09:00 – 19:00&#10;Ticket price: &#10;one-way ticket 15.00 KM; &#10;a return ticket 20.00 KM; &#10;Transport for children up to 7 years is free of charge" TextColor="Black" FontSize="20" Margin="10,0"/>
+                    <Grid HorizontalOptions="CenterAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" Text="Show website" Clicked="Button_Clicked" TabIndex="4" FontSize="20" TextColor="Black" FontAttributes="Bold" TextTransform="None" Margin="0,20" CornerRadius="10">
+                            <Button.Background>
+                                <LinearGradientBrush>
+                                    <GradientStop Color="#b5bfc2"  Offset="0.0"/>
+                                    <GradientStop Color="#cbd7db" Offset="0.5"/>
+                                    <GradientStop Color="#b5bfc2"  Offset="1.0"/>
+                                </LinearGradientBrush>
+                            </Button.Background>
+                        </Button>
+                        <Button Grid.Column="1" Text="Show starting point" Clicked="Button_Clicked" TabIndex="3" FontSize="20" TextColor="Black" FontAttributes="Bold" TextTransform="None" Margin="0,20" CornerRadius="10">
+                            <Button.Background>
+                                <LinearGradientBrush>
+                                    <GradientStop Color="#b5bfc2"  Offset="0.0"/>
+                                    <GradientStop Color="#cbd7db" Offset="0.5"/>
+                                    <GradientStop Color="#b5bfc2"  Offset="1.0"/>
+                                </LinearGradientBrush>
+                            </Button.Background>
+                        </Button>
+                    </Grid>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.Transport">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Transport" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="20">
+                <StackLayout.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#ffffff"  Offset="0.0"/>
+                        <GradientStop Color="#2596be" Offset="0.5"/>
+                        <GradientStop Color="#ffffff"  Offset="1.0"/>
+                    </LinearGradientBrush>
+                </StackLayout.Background>
+                <Frame Margin="20,20,20,0" Padding="0">
+                    <StackLayout Spacing="0">
+                        <Label TextColor="red" FontSize="30" FontAttributes="Bold" Text="•      IMPORTANT!      •" HorizontalOptions="Center"/>
+                        <Label TextColor="red" FontSize="20" FontAttributes="Bold" Text="Currently, the Baščaršija-Ilidža tram line is not in operation. Passengers are transported by bus on the Baščaršija-Čengić Vila route. The continuation of the line takes place by tram." Margin="10"/>
+                    </StackLayout>
+                </Frame>
+                <Frame Margin="20,0" Padding="0" CornerRadius="10">
+                    <StackLayout BackgroundColor="#e2eff3">
+                        <Label Margin="10" FontSize="20" TextColor="Black" Text="Sarajevo has a well-debeloped public transport system that provides convenient and affordable transportation options for residents and visitors alike. The city's public transport network includes trams, buses and trolleybuses with cover various routes and connect different parts of Sarajevo. The tram system is particularly popular and offers a convenient way to navigate the city center and surrounding neihborhoods. The buses and trolleybuses complement the tram networks, reaching areas that are not directly served by trams. Tickets for public transport can be purchased form kiosks, ticket machines or directly from the driver upon boarding."/>
+                    </StackLayout>
+                </Frame>
+                <Frame Padding="0" Margin="20,0" CornerRadius="10" BackgroundColor="#e2eff3">
+                    <StackLayout Spacing="0">
+                        <Button Padding="0" BorderColor="#1a6985" TextColor="Black" BorderWidth="1" Margin="-10,-5,-10,0" Text="BAŠČARŠIJA – ŽELJEZNIČKA STANICA" 
+                        HeightRequest="50" BackgroundColor="Transparent" FontSize="20" TabIndex="0" Clicked="linija" FontAttributes="Bold"/>
+                        <Button Padding="0" BorderColor="#1a6985" TextColor="Black" BorderWidth="1" Margin="-10,-1,-10,0" Text="BAŠČARŠIJA – HRASNICA" 
+                        HeightRequest="50" BackgroundColor="Transparent" FontSize="20" TabIndex="1" Clicked="linija" FontAttributes="Bold"/>
+                        <Button Padding="0" BorderColor="#1a6985" TextColor="Black" BorderWidth="1" Margin="-10,-1,-10,0" Text="VIJEĆNICA – DOBRINJA " 
+                        HeightRequest="50" BackgroundColor="Transparent" FontSize="20" TabIndex="2" Clicked="linija" FontAttributes="Bold"/>
+                        <Button Padding="0" BorderColor="#1a6985" TextColor="Black" BorderWidth="1" Margin="-10,-1,-10,-5" Text="BENTBAŠA – AERODROM " 
+                        HeightRequest="50" BackgroundColor="Transparent" FontSize="20" TabIndex="3" Clicked="linija" FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+                <Frame Padding="0" CornerRadius="10" Margin="20,0" BackgroundColor="#e2eff3">
+                    <StackLayout Spacing="0">
+                        <Label FontSize="20" Margin="10,0">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="For more information on the timing of public transport routes, you can download the official CentroCard application or web site"
+                                  TextColor="Black"/>
+                                    <Span Text=" Centrotrans Bus (centrocard.ba)" TextColor="blue">
+                                        <Span.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding TapCommand}"
+                                                          CommandParameter="https://centrocard.ba/#/"/>
+                                        </Span.GestureRecognizers>
+                                    </Span>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Image Source="CentroCardapp.jpg" Aspect="AspectFill" HeightRequest="90" Margin="10">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                    </StackLayout>
+                </Frame>
+                <Frame Padding="0" Margin="20,0" CornerRadius="10" BackgroundColor="#e2eff3">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="transportMountains"/>
+                    </Frame.GestureRecognizers>
+                    <Label Text="How to get to our mountains? Click here to find out" TextColor="black" FontSize="25" FontAttributes="Bold" Margin="10,0"/>
+                </Frame>
+                <Frame Padding="0" Margin="20,0" CornerRadius="10" BackgroundColor="#e2eff3">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="transportTrain"/>
+                    </Frame.GestureRecognizers>
+                    <Label Text="Do you want to travel with train? Click here to find out" TextColor="black" FontSize="25" FontAttributes="Bold" Margin="10,0"/>
+                </Frame>
+                <Frame Padding="0" Margin="20,0" CornerRadius="10" BackgroundColor="#e2eff3">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="rentCar"/>
+                    </Frame.GestureRecognizers>
+                    <Label Text="Don't want to use public transport? Click here to rent a car" TextColor="black" FontSize="25" FontAttributes="Bold" Margin="10,0"/>
+                </Frame>
+                <Frame Padding="0" Margin="20,0,20,20" CornerRadius="10" BackgroundColor="#e2eff3">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="emergencyNumbers"/>
+                    </Frame.GestureRecognizers>
+                    <Label Text="Emergency numbers" TextColor="black" FontSize="25" FontAttributes="Bold" Margin="10,0"/>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

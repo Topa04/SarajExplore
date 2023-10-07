@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.Mountains">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Mountains" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <StackLayout HeightRequest="460">
+                <Image Source="bje.jpg" HeightRequest="460" Aspect="AspectFill"/>
+                <Frame BackgroundColor="#bF9fccfa" Margin="20,-450,20,0" Padding="0">
+                    <StackLayout>
+                    <Label Text="Bjelašnica" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                    <Label Margin="10,0,10,5" Text="Bjelašnica is a majestic mountan located near Sarajevo. Standing at an impressive height of 2 067meters, it offers breathtaking panoramic views of the surrounding landscape. The mountain is known for its excellent ski slopes, making it a popular destination for winter sports enthusiasts. Bjelašnica was one of the host sites for the 1984 Winter Olympic and continues to attract visitors for its well-mainteined ski resorts and facilities. In addition to skiing, the mountain is also a great place for hiking, mountaineering and enjoying the beauty of nature. With its stunning vistas and diverse recreational opportunities, Bjelašnica is a must-visit for outdoor enthusiasts visiting Sarajevo." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                    </StackLayout>
+                </Frame>
+                    <Grid HorizontalOptions="CenterAndExpand" ColumnSpacing="20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="10" Clicked="showMap" HorizontalOptions="EndAndExpand" BackgroundColor="#bF9fccfa" CornerRadius="20" Text="See more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="20" Clicked="showMap" HorizontalOptions="EndAndExpand" BackgroundColor="#bF9fccfa" CornerRadius="20" Text="Live cam" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" />
+                        <Button Grid.Column="2" TabIndex="0" Clicked="showMap" HorizontalOptions="EndAndExpand" BackgroundColor="#bF9fccfa" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" />
+                    </Grid>
+                    
+            </StackLayout>
+            <StackLayout HeightRequest="480" Margin="0,-6,0,0">
+                <Image Source="jah.jpg" HeightRequest="480" Aspect="AspectFill"/>
+                <Frame BackgroundColor="#8Fffd699" Margin="20,-470,20,2" Padding="0">
+                    <StackLayout>
+                        <Label Text="Jahorina" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Jahorina is a stunning mountain located near Sarajevo. With its peak reaching 1 913meters, it offers breathtaking views of the surrounding landscapes. Jahorina gained international recognition as a host site for the 1984 Winter Olympics and continues to attract visitors for the exceptional ski slopes and facilities. The mountain offers a wide range of winter activities, including skiinig, snowboarding and cross-country skiing. Additionally, Jahorina is equally capticating during the summer months, with opportunies for hiking, mountain biking and enjoying the natural beauty of the area. With is picturesque scenery and diverse recreational offering, Jahorina is a fabourite destination for outdoor enthusiasts and nature lovers visiting Sarajevo." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                    </StackLayout>
+                </Frame>
+                    <Grid HorizontalOptions="CenterAndExpand" ColumnSpacing="20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="11" Clicked="showMap" HorizontalOptions="EndAndExpand" BackgroundColor="#9Fffd699" CornerRadius="20" Text="See more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" />
+                        <Button Grid.Column="1" TabIndex="21" Clicked="showMap" HorizontalOptions="EndAndExpand" BackgroundColor="#9Fffd699" CornerRadius="20" Text="Live cam" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" />
+                        <Button Grid.Column="2" TabIndex="1" Clicked="showMap" HorizontalOptions="EndAndExpand" BackgroundColor="#9Fffd699" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" />
+                    </Grid>
+                </StackLayout>
+                <StackLayout HeightRequest="480" Margin="0,-6,0,0">
+                    <Image Source="tre.jpg" HeightRequest="480" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#aFbce6cb" Margin="20,-470,20,2" Padding="0">
+                        <StackLayout>
+                            <Label Text="Trebević" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Trebević is a spectacular mountain located in close proyimity to Sarajevo. Rising to a height of 1 629meters, it offers breathtaking panoramic views of the city and surronding landscapes. The mountain is a popular destination for outdoor activities, including hiking, mountain biking and paragliding. Trebević is also famous for its historic cable car, which was originally built for the 1984 Winter Olympics. The cable car provides visitors with a scenic and convenient way to reach the mountain's summit. At the top, there are several cafes and restoraunts where visitors can relax and enjoy the stunning views. Trebević is a true natural gem, offering a perfect blend of outdoor adventure and serene beauty for both locals and tourist." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="CenterAndExpand" ColumnSpacing="20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="12" Clicked="showMap" HorizontalOptions="EndAndExpand" BackgroundColor="#AFbce6cb" CornerRadius="20" Text="See more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="22" Clicked="showMap" HorizontalOptions="EndAndExpand" BackgroundColor="#AFbce6cb" CornerRadius="20" Text="Live cam" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="2" TabIndex="2" Clicked="showMap" HorizontalOptions="EndAndExpand" BackgroundColor="#AFbce6cb" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                </StackLayout>
+                <StackLayout HeightRequest="480" Margin="0,-6,0,0">
+                    <Image Source="igm.jpg" HeightRequest="480" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#aFFFFFFF" Margin="20,-470,20,2" Padding="0">
+                        <StackLayout>
+                            <Label Text="Igman" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Igman is magnificent mountain situated near Sarajevo. Rising to an elevation od 1 502meters, it offers stunning natural beauty and recreational opportunities. Igman was one of the host sites for the 1984 Winter Olympics and continues to attract visitors with its well-mantainted ski slopers and faciliteies. It is a popular destination for skiing, snowboarding and other winter sports during the snowy months. In addition to winter activities, Igman also offers great opportunities for hiking, mountain biking and enjoying the picuresquare landscapes during the warmer seasons. With its rich history and breathtaking scenery, Igman is a beloved outdoor destination for both locals and tourists visiting Sarajevo." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="CenterAndExpand" ColumnSpacing="20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="13" Clicked="showMap" HorizontalOptions="EndAndExpand" BackgroundColor="#aFFFFFFF" CornerRadius="20" Text="See more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="23" Clicked="showMap" HorizontalOptions="EndAndExpand" BackgroundColor="#aFFFFFFF" CornerRadius="20" Text="Live cam" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="2" TabIndex="3" Clicked="showMap" HorizontalOptions="EndAndExpand" BackgroundColor="#aFFFFFFF" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

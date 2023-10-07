@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.Restaurants">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Restaurants" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="0">
+                <!-- Restaurant No.1 -->
+                <StackLayout HeightRequest="300" Spacing="15">
+                    <Image Source="rpp.jpg" HeightRequest="300" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#aF9fccfa" Margin="20,-295,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Restaurant Park Prinčeva" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Hidden at the very top of the Old city, restaurant “Park prinčeva”, has been always the place of gathering for poets, bohemians, travelers and all the people who enshrine Sarajevo. " TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                            <Label Text="Working hours: Every day: 8am- 11pm" FontAttributes="Bold,Italic" TextColor="Black" FontSize="22" Margin="10,0,10,10"/>
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="10" Clicked="openMore" HorizontalOptions="EndAndExpand" BackgroundColor="#CF9fccfa" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="20" Clicked="openMenu" HorizontalOptions="EndAndExpand" BackgroundColor="#CF9fccfa" CornerRadius="20" Text="Show menu" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="2" TabIndex="30" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#CF9fccfa" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                </StackLayout>
+                <!-- Restaurant No.2 -->
+                <StackLayout HeightRequest="340" Spacing="15">
+                    <Image Source="bdl.jpg" HeightRequest="340" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#8Fffffff" Margin="20,-340,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Baoli Dining and Lounge" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="We bring novelties to Sarajevo, both with our special ambience and gastronomic offer. Our restaurant is located in the very center of the city, but still separated enough for all those who like to enjoy food and drink with a touch of intimacy. " TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                            <Label Text="Working hours: Mon-Sat: 8am – 00pm; Sunday: Closed" FontAttributes="Bold,Italic" TextColor="Black" FontSize="22" Margin="10,0,10,10"/>
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="11" Clicked="openMore" HorizontalOptions="EndAndExpand" BackgroundColor="#8Fffffff" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="21" Clicked="openMenu" HorizontalOptions="EndAndExpand" BackgroundColor="#8Fffffff" CornerRadius="20" Text="Show menu" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="2" TabIndex="31" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#8Fffffff" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                </StackLayout>
+                <!-- Restaurant No.3 -->
+                <StackLayout HeightRequest="280" Spacing="15">
+                    <Image Source="ra.jpg" HeightRequest="280" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#aFdee590" Margin="20,-275,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Restaurant Amerikanac " TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Delight your taste buds with delicious mear salads, wok dishes, fish and meat specialties and enjoy the fantastic Amerikanac ambiance." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                            <Label Text="Working hours: Mon-Sat: 9am – 11pm; Sunday: Closed" FontAttributes="Bold" TextColor="Black" FontSize="22" Margin="10,0,10,10"/>
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="12" Clicked="openMore" HorizontalOptions="EndAndExpand" BackgroundColor="#aFdee590" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="22" Clicked="openMenu" HorizontalOptions="EndAndExpand" BackgroundColor="#aFdee590" CornerRadius="20" Text="Show menu" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="2" TabIndex="32" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#aFdee590" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                </StackLayout>
+                <!-- Restaurant No.4 -->
+                <StackLayout HeightRequest="360" Spacing="15">
+                    <Image Source="tfrms.jpg" HeightRequest="360" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#9Fffffff" Margin="20,-360,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="The Four Rooms Of Mrs. Safija" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Safija’s incarnates all those marvellous features that are intrinsic part of genetic heritage of these regions Sarajevo. It cherishes a spirit of a long gone, but fine times, when people were devotedly appreciating kindness, modesty, refinement, good manners, hospitality, culture, arts." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                            <Label Text="Working hours: Tue- Sat: 10am – 00pm; Sun - Mon: 12am – 00pm" FontAttributes="Bold" TextColor="Black" FontSize="22" Margin="10,0,10,10"/>
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="13" Clicked="openMore" HorizontalOptions="EndAndExpand" BackgroundColor="#9Fffffff" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="23" Clicked="openMenu" HorizontalOptions="EndAndExpand" BackgroundColor="#9Fffffff" CornerRadius="20" Text="Show menu" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="2" TabIndex="33" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#9Fffffff" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                </StackLayout>
+                <!-- Restaurant No.5 -->
+                <StackLayout HeightRequest="380" Spacing="15">
+                    <Image Source="gpv.jpg" HeightRequest="380" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#cffc997c" Margin="20,-375,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Gastro Pub Vučko" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Vučko is pure heaven for beer lovers and what makes this pub stand out is that it offers more than 120 varieties of beer. The experience is made complete with the delicious must-try food.  The food is served on special trays that will take you back to 1984 and the opening of the Olympic Games, when Sarajevo was the center of the world." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                            <Label Text="Working hours: Mon-Thu: 8am-01pm; Fri-Sat: 8am-02pm; Sun: 11am-01pm" FontAttributes="Bold" TextColor="Black" FontSize="22" Margin="10,0,10,10"/>
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="14" Clicked="openMore" HorizontalOptions="EndAndExpand" BackgroundColor="#cffc997c" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="24" Clicked="openMenu" HorizontalOptions="EndAndExpand" BackgroundColor="#cffc997c" CornerRadius="20" Text="Show menu" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="2" TabIndex="34" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#cffc997c" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                </StackLayout>
+                <!-- Restaurant No.6 -->
+                <StackLayout HeightRequest="360" Spacing="15">
+                    <Image Source="rdh.jpg" HeightRequest="360" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#9Fffffff" Margin="20,-355,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Restaurant Dos Hermanos" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="The point of every plate that comes out of our kitchen is the satisfaction of the guest. That's why we put a lot of effort and love into the selection of ingredients and the preparation and serving of meals. The concept of Dos Hermanos restaurant is based on hedonism, ultimate enjoyment of food, drink and the environment in which you are." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                            <Label Text="Working hours: Every day: 8am- 11pm" FontAttributes="Bold" TextColor="Black" FontSize="22" Margin="10,0,10,10"/>
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="15" Clicked="openMore" HorizontalOptions="EndAndExpand" BackgroundColor="#9Fffffff" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="25" Clicked="openMenu" HorizontalOptions="EndAndExpand" BackgroundColor="#9Fffffff" CornerRadius="20" Text="Show menu" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="2" TabIndex="35" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#9Fffffff" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                </StackLayout>
+                <!-- Restaurant No.7 -->
+                <StackLayout HeightRequest="380" Spacing="15">
+                    <Image Source="rt.jpg" HeightRequest="380" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#bF9fccfa" Margin="20,-375,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Restaurant Toplik" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="We offer you a pleasant atmosphere and specialties of traditional cuisine. The pond has a small capacity, but all stages of the production process are represented in it, from fry production to consumption fish. In the pond as well as on the table, three types of trout can be found: Californian (Salma gairdneri), brown trout (Salvenilus fontinalis) and our brown trout (Salma trutta)." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                            <Label Text="Working hours: Every day: 9am- 11pm" FontAttributes="Bold" TextColor="Black" FontSize="22" Margin="10,0,10,10"/>
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="16" Clicked="openMore" HorizontalOptions="EndAndExpand" BackgroundColor="#bF9fccfa" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="26" Clicked="openMenu" HorizontalOptions="EndAndExpand" BackgroundColor="#bF9fccfa" CornerRadius="20" Text="Show menu" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="2" TabIndex="36" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#bF9fccfa" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                </StackLayout>
+                <!-- Restaurant No.8 -->
+                <StackLayout HeightRequest="360" Spacing="15">
+                    <Image Source="rv.jpg" HeightRequest="360" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#8Ffbfba0" Margin="20,-355,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Restaurant Vapiano" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="The famous international restaurant chain Vapiano brings to Sarajevo a combination of excellent cuisine and a pleasant atmosphere. Vapiano serves specialties of Italian cuisine that the chefs prepare before your eyes from fresh ingredients. According to the Italian proverb 'He who goes through life relaxed, lives longer and healthier.'" TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                            <Label Text="Working hours: Every day: 8am- 11pm" FontAttributes="Bold" TextColor="Black" FontSize="22" Margin="10,0,10,10"/>
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="17" Clicked="openMore" HorizontalOptions="EndAndExpand" BackgroundColor="#8Ffbfba0" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="27" Clicked="openMenu" HorizontalOptions="EndAndExpand" BackgroundColor="#8Ffbfba0" CornerRadius="20" Text="Show menu" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="2" TabIndex="37" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#8Ffbfba0" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

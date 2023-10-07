@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.Bascarsija">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Baščaršija" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout Spacing="0">
+            <!-- Street No.1 -->
+            <StackLayout HeightRequest="270" Spacing="15">
+                <Image Source="sar1.jpg" HeightRequest="270" Aspect="AspectFill"/>
+                <Frame BackgroundColor="#Bfb3b3b3" Margin="20,-250,20,0" Padding="0">
+                    <StackLayout>
+                        <Label Text="Sarači Street" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                        <Label Margin="10,0,10,5" Text="Sarači, located in the old town if Sarajevo, is a bustling street famous for its vibrant atmosphere and traditional carftmanship.Lined with small shops and boutiques... " TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                    </StackLayout>
+                </Frame>
+                <Grid HorizontalOptions="Center" ColumnSpacing="45">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" TabIndex="10" Clicked="openPopup" HorizontalOptions="EndAndExpand" BackgroundColor="#Bfb3b3b3" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    <Button Grid.Column="1" TabIndex="20" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#Bfb3b3b3" CornerRadius="20" Text="Show map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                </Grid>
+            </StackLayout>
+            <!-- Street No.2 -->
+            <StackLayout HeightRequest="270" Spacing="15">
+                <Image Source="kaz1.jpg" HeightRequest="270" Aspect="AspectFill"/>
+                <Frame BackgroundColor="#Bfb3b3b3" Margin="20,-250,20,0" Padding="0">
+                    <StackLayout>
+                        <Label Text="Kazandžiluk Street" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                        <Label Margin="10,0,10,5" Text="Kazandžiluk is a historic street located in the heart od Sarajevo. The name ˝Kazdandžiluk¨ tranlates to ¨Coppersmith Street¨ in English, reflecting its rich history and traditional craft... " TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                    </StackLayout>
+                </Frame>
+                <Grid HorizontalOptions="Center" ColumnSpacing="45">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" TabIndex="11" Clicked="openPopup" HorizontalOptions="EndAndExpand" BackgroundColor="#Bfb3b3b3" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    <Button Grid.Column="1" TabIndex="21" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#Bfb3b3b3" CornerRadius="20" Text="Show map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                </Grid>
+            </StackLayout>
+            <!-- Street No.3 -->
+            <StackLayout HeightRequest="270" Spacing="15">
+                <Image Source="kov1.jpg" HeightRequest="270" Aspect="AspectFill"/>
+                <Frame BackgroundColor="#Bfb3b3b3" Margin="20,-250,20,0" Padding="0">
+                    <StackLayout>
+                        <Label Text="Kovači Street" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                        <Label Margin="10,0,10,5" Text="Kovači is a neighborhood located in the ols part of Sarajevo. Situated on the hillside, Kovači offers breathtaking panoramic views od the city and its surronding mountains. The neighborhood is known for its narrow..." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                    </StackLayout>
+                </Frame>
+                <Grid HorizontalOptions="Center" ColumnSpacing="45">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" TabIndex="12" Clicked="openPopup" HorizontalOptions="EndAndExpand" BackgroundColor="#Bfb3b3b3" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    <Button Grid.Column="1" TabIndex="22" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#Bfb3b3b3" CornerRadius="20" Text="Show map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

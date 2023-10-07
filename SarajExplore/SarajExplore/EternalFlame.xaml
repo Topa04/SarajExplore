@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.EternalFlame"
+             BackgroundImageSource="el1.jpg">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Eternal Flame" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame BackgroundColor="#cfcccccc" Padding="0" Margin="20,20,20,10" CornerRadius="8">
+                    <Label Text="Vječna vatra, meaning ''Eternal Flame'', is a symbolic mounoment located in Sarajevo's central park. Its serves as a powerful memoriall to honor the fallen doldiers and civilian victims of the Secont World War and subsewuent conflicts. The burning flame aymbolizes the enduring spirit of Sarajevo and its resilience in the face of adversity, remininding visitors od the city's turbulent history and the importance of peace and remembrance."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,5,10,10"/>
+                </Frame>
+                <Frame Padding="0" Margin="20,0,20,10" CornerRadius="8">
+                    <Image Source="el2.jpg"/>
+                </Frame>
+                <Frame BackgroundColor="#cfcccccc" Padding="0" Margin="20,0,20,10" CornerRadius="8">
+                    <Label Text="The monument is comprised of tiles that are inscribed with text in the colors of the flag of former Yugoslavia – blue, white and red – and there is a copper receptacle in the shape of a wreath of bay leaves which contains an open flame that is always burning. The flame symbolizes that Sarajevo’s liberators and the coat of arms of former Yugoslavia will be forever remembered. "
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,5,10,10"/>
+                </Frame>
+                <Frame Padding="0" Margin="20,0,20,10" CornerRadius="8">
+                    <Image Source="el3.jpg"/>
+                </Frame>
+                <Frame BackgroundColor="#cfcccccc" Padding="0" Margin="20,0,20,10" CornerRadius="8">
+                    <Label Text="This simple yet beautiful monument is the work of the architect, Juraj Neidhardt. It was installed at the front of one building in the heart of Sarajevo’s walking zone, at the junction of Mula Mustafa Bašeskije, Titova and Ferhadija Streets. The building itself was designed by Josip Vancaš and Karlo Paržik. First the home of Grand Hotel, it later became the seat of the National Bank and then the Social Accounting Services and is currently the home of the Payment Bureau."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,5,10,10"/>
+                </Frame>
+                <Button Text="Show on map" FontSize="20" WidthRequest="200" HorizontalOptions="CenterAndExpand" 
+                        HeightRequest="50" Margin="0,0,0,15" CornerRadius="20" TextColor="Black" TextTransform="None"
+                        FontAttributes="Bold" Clicked="openMap">
+                    <Button.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#666666"  Offset="0.0"/>
+                            <GradientStop Color="#cccccc" Offset="0.5"/>
+                            <GradientStop Color="#666666"  Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

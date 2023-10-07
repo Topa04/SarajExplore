@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xct:Popup xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.emNumbers"
+           xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    Color="Transparent"
+    IsLightDismissEnabled = "False"
+    Size="350,500">
+    <Frame Padding="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" CornerRadius="10" BackgroundColor="#e2eff3">
+        <StackLayout Margin="10">
+            <Grid HorizontalOptions="StartAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="110"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0" Grid.Row="0" Source="GSS"/>
+                <Image Grid.Column="0" Grid.Row="1"  Source="PSS"/>
+                <Image Grid.Column="0" Grid.Row="2"  Source="VDS"/>
+                <Image Grid.Column="0" Grid.Row="3"  Source="HPS"/>
+                <Label Grid.Column="1" Grid.Row="0" Text="Mountain Rescue" TextColor="Black" FontSize="25" FontAttributes="Bold,Italic" HorizontalOptions="Center" VerticalOptions="Center" Margin="20,-40,0,0"/>
+                <Label Grid.Column="1" Grid.Row="1" Text="Police" TextColor="Black" FontSize="25" FontAttributes="Bold,Italic" HorizontalOptions="Center" VerticalOptions="Center" Margin="20,-40,0,0"/>
+                <Label Grid.Column="1" Grid.Row="2" Text="Firefighters" TextColor="Black" FontSize="25" FontAttributes="Bold,Italic" HorizontalOptions="Center" VerticalOptions="Center" Margin="20,-40,0,0"/>
+                <Label Grid.Column="1" Grid.Row="3" Text="Ambulance" TextColor="Black" FontSize="25" FontAttributes="Bold,Italic" HorizontalOptions="Center" VerticalOptions="Center" Margin="20,-40,0,0"/>
+                <Label Grid.Column="1" Grid.Row="0" Text="121" TextColor="Black" FontSize="40" FontAttributes="Bold,Italic" HorizontalOptions="Center" VerticalOptions="Center" Margin="20,20,0,0"/>
+                <Label Grid.Column="1" Grid.Row="1" Text="122" TextColor="Black" FontSize="40" FontAttributes="Bold,Italic" HorizontalOptions="Center" VerticalOptions="Center" Margin="20,20,0,0"/>
+                <Label Grid.Column="1" Grid.Row="2" Text="123" TextColor="Black" FontSize="40" FontAttributes="Bold,Italic" HorizontalOptions="Center" VerticalOptions="Center" Margin="20,20,0,0"/>
+                <Label Grid.Column="1" Grid.Row="3" Text="124" TextColor="Black" FontSize="40" FontAttributes="Bold,Italic" HorizontalOptions="Center" VerticalOptions="Center" Margin="20,20,0,0"/>
+            </Grid>
+            <Button Clicked="Button_Clicked" Text="Back" FontSize="20" TextColor="Black" FontAttributes="Bold" TextTransform="None"  Margin="20,10" CornerRadius="10" HorizontalOptions="CenterAndExpand" WidthRequest="150">
+                <Button.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#b5bfc2"  Offset="0.0"/>
+                        <GradientStop Color="#cbd7db" Offset="0.5"/>
+                        <GradientStop Color="#b5bfc2"  Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </StackLayout>
+    </Frame>
+</xct:Popup>

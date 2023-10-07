@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.Sebilj"
+             BackgroundImageSource="s2.jpg">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Sebilj" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame BackgroundColor="#7Fffffff" Padding="0" Margin="20,20,20,10" CornerRadius="8">
+                    <Label Text="Sebilj, an iconic wooden fountains, is a beloved symbol of Sarajevo's rich Ottoman heritage. Located in the heart od the city's historic center, Baščaršija, Sebilj serves as a meeting point and hathering spot for locals and tourists alike. Its intricate craftsmanship and beautiful desing make it a picturesque spot to wnjoy a cup of tradicional Bosnian coffee and soak in the vibrant atmosphere of Sarajevo."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,5,10,10"/>
+                </Frame>
+                <Frame Padding="0" Margin="20,0,20,10" CornerRadius="8" HeightRequest="230">
+                    <Image Source="s3.jpg" HeightRequest="200" Aspect="AspectFill" Margin="0,-20,0,0"/>
+                </Frame>
+                <Frame BackgroundColor="#7Fffffff" Padding="0" Margin="20,0,20,10" CornerRadius="8">
+                    <Label Text="The Sebilj is an Ottoman-style wooden fountain (sebilj) in the centre of Baščaršija Square in Sarajevo built by Mehmed Pasha Kukavica in 1753. It was relocated by Austrian architect Alexander Wittek in 1891. According to a local legend, visitors who drink water from this fountain will return to Sarajevo someday. "
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,5,10,10"/>
+                </Frame>
+                <Frame Padding="0" Margin="20,0,20,10" CornerRadius="8" HeightRequest="450">
+                    <Image Source="s4.jpg" HeightRequest="300" Aspect="AspectFill" Margin="0,-90,0,0"/>
+                </Frame>
+                <Frame BackgroundColor="#7Fffffff" Padding="0" Margin="20,0,20,10" CornerRadius="8">
+                    <Label Text="There is a replica of Sarajevo's Sebilj in Belgrade, Serbia, donated by the city of Sarajevo in 1989. Another replica in St. Louis, Missouri, in the United States, was donated by the Bosnian community to the city of St. Louis for the city's 250th birthday. A third replica is in Novi Pazar, also a gift from the city of Sarajevo. In Bursa, Turkey a replica of Sarajevo’s Sebilj was built as a symbol of friendship between the city of Bursa and the city of Sarajevo. In 2018, another replica of the Sebilj has been completed in the city of Rožaje, Montenegro."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,5,10,10"/>
+                </Frame>
+                <Button Text="Show on map" FontSize="20" WidthRequest="200" HorizontalOptions="CenterAndExpand"  TextTransform="None"
+                        HeightRequest="50" Margin="0,0,0,15" CornerRadius="20" TextColor="Black" 
+                        FontAttributes="Bold" Clicked="openMap">
+                    <Button.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#808080"  Offset="0.0"/>
+                            <GradientStop Color="#b3b3b3" Offset="0.25"/>
+                            <GradientStop Color="#ffffff" Offset="0.5"/>
+                            <GradientStop Color="#b3b3b3" Offset="0.75"/>
+                            <GradientStop Color="#808080"  Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

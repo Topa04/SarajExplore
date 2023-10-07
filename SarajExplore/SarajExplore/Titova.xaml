@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.Titova"
+             BackgroundImageSource="ts2.jpg">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Titova Street" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame BackgroundColor="#BFa8d5e5" Padding="0" Margin="20,20,20,10" CornerRadius="8">
+                    <Label Text="Titova ulica, formerly known as Maršala Tita Street, is a significant thoroughfare in Sarajevo named after Josib Broz Tito, the former president of Yugoslavia. It stretches through the city center, lined with shops, cafes and historic buildings. The street not only serves as a vibrant commercial hub but alson holds historical significance, reflecting the city’s connection to Yugoslavia’s socialst era and its cultural heritage."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,5,10,10"/>
+                </Frame>
+                <Frame Padding="0" Margin="20,0,20,10" CornerRadius="8">
+                    <Image Source="ts3.jpg" HeightRequest="260" Aspect="AspectFill"/>
+                </Frame>
+                <Frame BackgroundColor="#BFa8d5e5" Padding="0" Margin="20,0,20,10" CornerRadius="8">
+                    <Label Text="Marshal Tito street, or Tito's street, is one of the main streets in Sarajevo, located in the Centar Municipality. The street is named after Josip Broz Tito, the former President of Yugoslavia. Marshal Tito street connects Mula Mustafa Bašeskija street and Ferhadija street on the east and Zmaj od Bosne street on the west. Through this street lies the main route of Sarajevo trams. "
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,5,10,10"/>
+                </Frame>
+                <Frame Padding="0" Margin="20,0,20,10" CornerRadius="8">
+                    <Image Source="ts4.jpg" HeightRequest="260" Aspect="AspectFill"/>
+                </Frame>
+                <Frame BackgroundColor="#BFa8d5e5" Padding="0" Margin="20,0,20,10" CornerRadius="8">
+                    <Label Text="Its current name the street has had since 6 April 1945. In 1993, the street was bisected: The part from Marijin Dvor to the Eternal flame remained Marshal Tito street, but the part that continues on to Baščaršija became Mula Mustafe Bašeskije street. Marshal Tito street is a popular location to organize open-air concerts and other various celebrations. On 6 April 2012, this street was the location of the Sarajevo Red Line, a memorial event organized in cooperation between the City of Sarajevo and East West Theatre Company which commemorated the Siege of Sarajevo's 20th anniversary."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,5,10,10"/>
+                </Frame>
+                <Button Text="Show on map" FontSize="20" WidthRequest="200" HorizontalOptions="CenterAndExpand" 
+                        HeightRequest="50" Margin="0,0,0,15" CornerRadius="20" TextColor="Black" TextTransform="None"
+                        FontAttributes="Bold" Clicked="openMap">
+                    <Button.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#658089"  Offset="0.0"/>
+                            <GradientStop Color="#a8d5e5" Offset="0.5"/>
+                            <GradientStop Color="#658089"  Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

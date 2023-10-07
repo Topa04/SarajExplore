@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xct:Popup xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="SarajExplore.UlicePopup"
+           Size="350,700"
+           Color="Transparent"
+           IsLightDismissEnabled="False">
+    <ScrollView>
+        <Frame Padding="0" CornerRadius="20" x:Name="okvir">
+            <StackLayout >
+                <Label x:Name="naslov" TextColor="Black" FontAttributes="Bold" FontSize="25" Margin="20,0,0,0"/>
+                <Label x:Name="tekst1" TextColor="Black" FontSize="20" Text="" Margin="20,0,0,0"/>
+                <Image x:Name="slika1" Aspect="AspectFill" HeightRequest="200"/>
+                <Label x:Name="tekst2" TextColor="Black" FontSize="20" Text="" Margin="20,0,0,0"/>
+                <Image x:Name="slika2" Aspect="AspectFill" HeightRequest="200"/>
+                <Label x:Name="tekst3" TextColor="Black" FontSize="20" Text="" Margin="20,0,0,0"/>
+                <Button Text="Back" Clicked="Back" TextTransform="None" HorizontalOptions="CenterAndExpand" WidthRequest="150" CornerRadius="20" TextColor="Black" Padding="0" FontAttributes="Bold" FontSize="20" Margin="0,0,0,20">
+                    <Button.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#808080"  Offset="0.0"/>
+                            <GradientStop Color="#b3b3b3" Offset="0.25"/>
+                            <GradientStop Color="#cccccc" Offset="0.5"/>
+                            <GradientStop Color="#b3b3b3" Offset="0.75"/>
+                            <GradientStop Color="#808080"  Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </StackLayout>
+        </Frame>
+    </ScrollView>
+</xct:Popup>

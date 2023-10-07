@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.Promenade">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Promenade" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Spacing="0">
+            <StackLayout HeightRequest="420">
+            <Image Source="aa.jpg" HeightRequest="420" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#aFffcc99" Margin="20,-410,20,0" Padding="0">
+                <StackLayout>
+                    <Label Text="Aleja ambasadora" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Aleja ambasadora is a famous boulevard locaded in Sarajevo. It stretches for about 2 kilometers and is lined with beautiful trees and colorful flower beds. The boulevard is named after the many embassies that are located along its route, giving it a unique and international atmosphere. Aleja ambasadora is a popular spot for locals and touristi alike, who often take leisurely walks or enjoy outdoor caafes and restaurants along the boulevard. With its charming architecture, vibrant ambiance and proximity to cultural landmarks, Aleja ambasadora is must-visit destination in Sarajevo." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                </StackLayout>
+            </Frame>
+                    <Button TabIndex="0" Clicked="showMap" HorizontalOptions="EndAndExpand" BackgroundColor="#BFffcc99" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" Margin="0,0,20,0"/>
+        </StackLayout>
+            <StackLayout HeightRequest="420">
+                <Image Source="vs.jpg" HeightRequest="420" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#6Fffff99" Margin="20,-410,20,0" Padding="0">
+                    <StackLayout>
+                        <Label Text="Vilsonovo šetalište" TextColor="White" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Vilsonovo šetalište is a pictursque promenade situated in Sarajevo. Spanning approximately 800 meters, it offers stunning viewa of the Miljacka river and the surrounding mountains. The promenade is named after Woodrow Wilson, the 28th President of the United States, in recognition of his efforts to establish peace and justice after World War I. Vilsonovo šetalište is adorned with charming cafes, shops and green spaces, providing a tranquil escape for both locals and visitors. It serves as a popular gathering place for leisurely strolls, picnics and outdoor activities throughout the year." TextColor="White" FontAttributes="Bold" FontSize="20" />
+                    </StackLayout>
+                </Frame>
+                    <Button TabIndex="1" Clicked="showMap" HorizontalOptions="EndAndExpand" BackgroundColor="#4Fffff99" CornerRadius="20" Text="Show on map" TextColor="White" FontAttributes="Bold" TextTransform="None" FontSize="20" Margin="0,0,20,0"/>
+            </StackLayout>
+                <StackLayout HeightRequest="460">
+                <Image Source="vb.jpg" HeightRequest="460" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#9Fb3e6b3" Margin="20,-450,20,0" Padding="0">
+                    <StackLayout Spacing="0">
+                            <Label Text="Vrelo Bosne" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,0,10,20"/>
+                            <Label FontSize="20" FontAttributes="Bold" TextColor="Black" Text="Ticket:&#10;Children, students and pensioners: 1 KM;&#10;Other visitors: 2 KM;" Margin="10,0"/>
+                            <Label Margin="10,0,10,5" Text="Vrelo Bosne is a natural wonder located in Sarajevo. It is a source of the river Bosna and a popular destination for nature lovers. The site features lush greenery, crystal-clean waters and stunning landscapes, making it an idylic escape form the city. Visitors can explore the park on foot or by horse-dawn carriage, enjoying the serene atmosphere and abundant wildlife. Vrelo Bosne is also home to numerous springs and small waterfalls, adding to its natural beauty. It is a beloved spot for picnics, family outings and leisurely walks, providing a refreshing retreat in the heart of Sarajevo." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                    </StackLayout>
+                </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="140">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="3" Clicked="showMap" HorizontalOptions="EndAndExpand" BackgroundColor="#BFb3e6b3" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="2" Clicked="showMap" HorizontalOptions="EndAndExpand" BackgroundColor="#BFb3e6b3" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                    
+            </StackLayout>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

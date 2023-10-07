@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.Tour1Day1"
+             BackgroundImageSource="pozadinaBlur.jpg">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Day 1" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView x:Name="scrollView">
+
+            <StackLayout>
+                <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" ColumnSpacing="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <!--  Linije  -->
+                    <BoxView WidthRequest="5" HeightRequest="2010" Color="black" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="StartAndExpand"/>
+                    <BoxView WidthRequest="30" HeightRequest="30" Color="White" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Margin="0,245,0,0" CornerRadius="15"/>
+                    <BoxView WidthRequest="20" x:Name="krug1" HeightRequest="20" Color="Black" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Margin="0,250,0,0" CornerRadius="10"/>
+                    <BoxView WidthRequest="30" HeightRequest="30" Color="White" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Margin="0,540,0,0" CornerRadius="15"/>
+                    <BoxView WidthRequest="20" x:Name="krug2" HeightRequest="20" Color="Black" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Margin="0,545,0,0" CornerRadius="10"/>
+                    <BoxView WidthRequest="30" HeightRequest="30" Color="White" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Margin="0,790,0,0" CornerRadius="15"/>
+                    <BoxView WidthRequest="20" x:Name="krug3" HeightRequest="20" Color="Black" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Margin="0,795,0,0" CornerRadius="10"/>
+                    <BoxView WidthRequest="30" HeightRequest="30" Color="White" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Margin="0,1020,0,0" CornerRadius="15"/>
+                    <BoxView WidthRequest="20" x:Name="krug4" HeightRequest="20" Color="Black" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Margin="0,1025,0,0" CornerRadius="10"/>
+                    <BoxView WidthRequest="30" HeightRequest="30" Color="White" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Margin="0,1335,0,0" CornerRadius="15"/>
+                    <BoxView WidthRequest="20" x:Name="krug5" HeightRequest="20" Color="Black" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Margin="0,1340,0,0" CornerRadius="10"/>
+                    <BoxView WidthRequest="30" HeightRequest="30" Color="White" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Margin="0,1605,0,0" CornerRadius="15"/>
+                    <BoxView WidthRequest="20" x:Name="krug6" HeightRequest="20" Color="Black" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Margin="0,1610,0,0" CornerRadius="10"/>
+                    <BoxView WidthRequest="30" HeightRequest="30" Color="White" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Margin="0,1900,0,0" CornerRadius="15"/>
+                    <BoxView WidthRequest="20" x:Name="krug7" HeightRequest="20" Color="Black" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Margin="0,1905,0,0" CornerRadius="10"/>
+                    <BoxView WidthRequest="30" HeightRequest="30" Color="White" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Margin="0,2010,0,0" CornerRadius="15"/>
+                    <BoxView WidthRequest="20" x:Name="krug8" HeightRequest="20" Color="Black" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="StartAndExpand" Margin="0,2015,0,0" CornerRadius="10"/>
+                    <!--  Tekst  -->
+                    <StackLayout Grid.Column="1" Spacing="30" Margin="5,10,20,20">
+                        <!--  Frame No.1  -->
+                        <Frame CornerRadius="20" Padding="0" BackgroundColor="#AFffffff">
+                            <StackLayout Spacing="0">
+                                <Label TextColor="Black" FontSize="20" Margin="10,10,10,0">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="If your hotel is far from Baščaršija you can use the bus line Čengić Vila- Baščaršija. Get off at Baščaršija station. When you get off the bus, the " />
+                                            <Span Text="House of Spite"  FontAttributes="Bold,Italic" FontSize="20">
+                                                <Span.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="houseOfSpite"/>
+                                                </Span.GestureRecognizers>
+                                            </Span>
+                                            <Span Text=" will be right in front of you, and the "/>
+                                            <Span Text="City Hall"   FontAttributes="Bold,Italic" FontSize="20">
+                                                <Span.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="cityHall"/>
+                                                </Span.GestureRecognizers>
+                                            </Span>
+                                            <Span Text=" will be behind you. If you are staying in hotel near Baščaršija you can go for a walk to see House of spite." />
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Button Text="Show on map" TabIndex="0" Clicked="openMap" TextColor="Black" TextTransform="None" FontSize="20" FontAttributes="Bold" Padding="0" Margin="80,10" CornerRadius="20">
+                                    <Button.Background>
+                                        <LinearGradientBrush>
+                                            <GradientStop Color="#808080"  Offset="0.0"/>
+                                            <GradientStop Color="#b3b3b3" Offset="0.5"/>
+                                            <GradientStop Color="#808080"  Offset="1.0"/>
+                                        </LinearGradientBrush>
+                                    </Button.Background>
+                                </Button>
+                            </StackLayout>
+                        </Frame>
+                        <!--  Frame No.2  -->
+                        <Frame CornerRadius="20" Padding="0" BackgroundColor="#AFffffff">
+                            <StackLayout Spacing="0">
+                                <Label TextColor="Black" FontSize="20" Margin="10,10,10,0">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="Cross the road to the City Hall and continue towards the kiosk. You will find yourself in the old city center of Sarajevo - "/>
+                                            <Span Text="Baščaršija" FontAttributes="Bold,Italic" FontSize="20">
+                                                <Span.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="bascarsija"/>
+                                                </Span.GestureRecognizers>
+                                            </Span>
+                                            <Span Text=". You will be able to smell various smells of local cuisine, and above all the smells of the meal for which Sarajevo is famous - ćevapi. Follow this street until you reach a small fountain on your right. In front of you will be "/>
+                                            <Span Text="Sebilj." FontAttributes="Bold,Italic" FontSize="20">
+                                                <Span.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="sebilj"/>
+                                                </Span.GestureRecognizers>
+                                            </Span>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Button Text="Show on map" TextColor="Black" TabIndex="1" Clicked="openMap" TextTransform="None" FontSize="20" FontAttributes="Bold" Padding="0" Margin="80,10" CornerRadius="20">
+                                    <Button.Background>
+                                        <LinearGradientBrush>
+                                            <GradientStop Color="#808080"  Offset="0.0"/>
+                                            <GradientStop Color="#b3b3b3" Offset="0.5"/>
+                                            <GradientStop Color="#808080"  Offset="1.0"/>
+                                        </LinearGradientBrush>
+                                    </Button.Background>
+                                </Button>
+                            </StackLayout>
+                        </Frame>
+                        <!--  Frame No.3  -->
+                        <Frame CornerRadius="20" Padding="0" BackgroundColor="#AFffffff">
+                            <StackLayout Spacing="0">
+                                <Label TextColor="Black" FontSize="20" Margin="10,10,10,0">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="If you continue walking straight towards Sebilj, on your right you will find one of the oldest streets in Baščaršija - "/>
+                                            <Span Text="Kazandžiluk" FontAttributes="Bold,Italic" FontSize="20">
+                                                <Span.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="bascarsija"/>
+                                                </Span.GestureRecognizers>
+                                            </Span>
+                                            <Span Text=". In that street you will find people practicing the old trade of blacksmithing. You can visit old bazaar and admire the Ottoman-era architecture."/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Button Text="Show on map" TabIndex="2" Clicked="openMap" TextColor="Black" TextTransform="None" FontSize="20" FontAttributes="Bold" Padding="0" Margin="80,10" CornerRadius="20">
+                                    <Button.Background>
+                                        <LinearGradientBrush>
+                                            <GradientStop Color="#808080"  Offset="0.0"/>
+                                            <GradientStop Color="#b3b3b3" Offset="0.5"/>
+                                            <GradientStop Color="#808080"  Offset="1.0"/>
+                                        </LinearGradientBrush>
+                                    </Button.Background>
+                                </Button>
+                            </StackLayout>
+                        </Frame>
+                        <!--  Frame No.4  -->
+                        <Frame CornerRadius="20" Padding="0" BackgroundColor="#AFffffff">
+                            <StackLayout Spacing="0">
+                                <Label TextColor="Black" FontSize="20" Margin="10,10,10,0">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="If you go back from Sebilj towards the small fountain, on your right side,  you will find a long street called "/>
+                                            <Span Text="Sarači" FontAttributes="Bold,Italic" FontSize="20">
+                                                <Span.GestureRecognizers>
+                                                    <TapGestureRecognizer/>
+                                                </Span.GestureRecognizers>
+                                            </Span>
+                                            <Span Text=". Go through it and you will reach the most famous mosque in Sarajevo - the "/>
+                                            <Span Text="Gazi-Husrev Bey Mosque" FontAttributes="Bold,Italic" FontSize="20">
+                                                <Span.GestureRecognizers>
+                                                    <TapGestureRecognizer/>
+                                                </Span.GestureRecognizers>
+                                            </Span>
+                                            <Span Text=" and the Clock Tower near by."/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Button Text="Show on map" TextColor="Black" TextTransform="None" FontSize="20" FontAttributes="Bold" Padding="0" Margin="80,10" CornerRadius="20">
+                                    <Button.Background>
+                                        <LinearGradientBrush>
+                                            <GradientStop Color="#808080"  Offset="0.0"/>
+                                            <GradientStop Color="#b3b3b3" Offset="0.5"/>
+                                            <GradientStop Color="#808080"  Offset="1.0"/>
+                                        </LinearGradientBrush>
+                                    </Button.Background>
+                                </Button>
+                            </StackLayout>
+                        </Frame>
+                        <!--  Frame No.5  -->
+                        <Frame CornerRadius="20" Padding="0" BackgroundColor="#AFffffff">
+                            <StackLayout Spacing="0">
+                                <Label TextColor="Black" FontSize="20" Margin="10,10,10,0">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="Near the Gazi-Husrev-bey mosque in Sarači Street, there are several "/>
+                                            <Span Text="pastry shops" FontAttributes="Bold,Italic" FontSize="20">
+                                                <Span.GestureRecognizers>
+                                                    <TapGestureRecognizer/>
+                                                </Span.GestureRecognizers>
+                                            </Span>
+                                            <Span Text=" where you can try some of the delicacies of the local cuisine. After a short break, you can continue walking along Sarači Street to the " />
+                                            <Span Text="Sacred Heart Cathedral" FontAttributes="Bold,Italic" FontSize="20">
+                                                <Span.GestureRecognizers>
+                                                    <TapGestureRecognizer/>
+                                                </Span.GestureRecognizers>
+                                            </Span>
+                                            <Span Text=", which will be on your right. Walking towards the Sacred Heart Cathedral, you enter a part of the city that belongs to the Austro-Hungarian style of architecture."/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Button Text="Show on map" TextColor="Black" TextTransform="None" FontSize="20" FontAttributes="Bold" Padding="0" Margin="80,10" CornerRadius="20">
+                                    <Button.Background>
+                                        <LinearGradientBrush>
+                                            <GradientStop Color="#808080"  Offset="0.0"/>
+                                            <GradientStop Color="#b3b3b3" Offset="0.5"/>
+                                            <GradientStop Color="#808080"  Offset="1.0"/>
+                                        </LinearGradientBrush>
+                                    </Button.Background>
+                                </Button>
+                            </StackLayout>
+                        </Frame>
+                        <!--  Frame No.6  -->
+                        <Frame CornerRadius="20" Padding="0" BackgroundColor="#AFffffff">
+                            <StackLayout Spacing="0">
+                                <Label TextColor="Black" FontSize="20" Margin="10,10,10,0">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="After visiting the Cathedral, you can continue walking to the park on the left. You are now in one of the most famous streets in Sarajevo - Ferhadija. Turn left there to reach the largest and most famous Orthodox church in Sarajevo - the "/>
+                                            <Span Text="Cathedral of the Nativity of the Blessed Virgin Mary." FontAttributes="Bold,Italic" FontSize="20">
+                                                <Span.GestureRecognizers>
+                                                    <TapGestureRecognizer/>
+                                                </Span.GestureRecognizers>
+                                            </Span>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Button Text="Show on map" TextColor="Black" TextTransform="None" FontSize="20" FontAttributes="Bold" Padding="0" Margin="80,10" CornerRadius="20">
+                                    <Button.Background>
+                                        <LinearGradientBrush>
+                                            <GradientStop Color="#808080"  Offset="0.0"/>
+                                            <GradientStop Color="#b3b3b3" Offset="0.5"/>
+                                            <GradientStop Color="#808080"  Offset="1.0"/>
+                                        </LinearGradientBrush>
+                                    </Button.Background>
+                                </Button>
+                            </StackLayout>
+                        </Frame>
+                        <!--  Frame No.7  -->
+                        <Frame CornerRadius="20" Padding="0" BackgroundColor="#AFffffff">
+                            <StackLayout Spacing="0">
+                                <Label TextColor="Black" FontSize="20" Margin="10,10,10,0">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="After visiting the Cathedral Church of the Nativity of the Theotokos, you can continue walking through the part of the city that still belongs to Autro-Hungarian architecture. Passing through Ferhadija Street, you reach "/>
+                                            <Span Text="Titova Street" FontAttributes="Bold,Italic" FontSize="20">
+                                                <Span.GestureRecognizers>
+                                                    <TapGestureRecognizer/>
+                                                </Span.GestureRecognizers>
+                                            </Span>
+                                            <Span Text=", also one of the more famous streets in Sarajevo. After entering in Titova street, on your right side will be the "/>
+                                            <Span Text="Eternal Flame." FontAttributes="Bold,Italic" FontSize="20">
+                                                <Span.GestureRecognizers>
+                                                    <TapGestureRecognizer/>
+                                                </Span.GestureRecognizers>
+                                            </Span>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Button Text="Show on map" TextColor="Black" TextTransform="None" FontSize="20" FontAttributes="Bold" Padding="0" Margin="80,10" CornerRadius="20">
+                                    <Button.Background>
+                                        <LinearGradientBrush>
+                                            <GradientStop Color="#808080"  Offset="0.0"/>
+                                            <GradientStop Color="#b3b3b3" Offset="0.5"/>
+                                            <GradientStop Color="#808080"  Offset="1.0"/>
+                                        </LinearGradientBrush>
+                                    </Button.Background>
+                                </Button>
+                            </StackLayout>
+                        </Frame>
+                        <!--  Frame No.8  -->
+                        <Frame CornerRadius="20" Padding="0" BackgroundColor="#AFffffff">
+                            <StackLayout Spacing="0">
+                                <Label TextColor="Black" FontSize="20" Margin="10,10,10,0">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="After visiting Baščaršija, Ferhadija and Titove street, you can find a place to rest and enjoy the local cuisine. After a break, we suggest you take a walk on one of Sarajevo's most famous promenades - "/>
+                                            <Span Text="Vilson's Promenade." FontAttributes="Bold,Italic" FontSize="20">
+                                                <Span.GestureRecognizers>
+                                                    <TapGestureRecognizer/>
+                                                </Span.GestureRecognizers>
+                                            </Span>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Button Text="Show on map" TextColor="Black" TextTransform="None" FontSize="20" FontAttributes="Bold" Padding="0" Margin="80,10" CornerRadius="20">
+                                    <Button.Background>
+                                        <LinearGradientBrush>
+                                            <GradientStop Color="#808080"  Offset="0.0"/>
+                                            <GradientStop Color="#b3b3b3" Offset="0.5"/>
+                                            <GradientStop Color="#808080"  Offset="1.0"/>
+                                        </LinearGradientBrush>
+                                    </Button.Background>
+                                </Button>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </Grid>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

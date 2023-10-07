@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.Food"
+             BackgroundColor="White">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Food and Drinks" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout Spacing="20">
+            <StackLayout.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#ffffff"  Offset="0.0"/>
+                    <GradientStop Color="#f9e3af" Offset="0.5"/>
+                    <GradientStop Color="#ffffff"  Offset="1.0"/>
+                    </LinearGradientBrush>
+            </StackLayout.Background>
+            <Frame Padding="0" CornerRadius="20" HeightRequest="240" Margin="20,20,20,0">
+                <StackLayout>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="restaurantsMore"/>
+                    </StackLayout.GestureRecognizers>
+                <Image Source="fdr.jpg" HeightRequest="240" Aspect="AspectFill"/>
+                    <Label Text="Restourants" FontSize="35" TextColor="#f9e3af" FontAttributes="Bold,Italic" Margin="30,-70,0,0" BackgroundColor="#8F000000"/>
+                </StackLayout>
+            </Frame>
+            <Frame Padding="0" CornerRadius="20" HeightRequest="240" Margin="20,0">
+                <StackLayout>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="cevapMore"/>
+                    </StackLayout.GestureRecognizers>
+                    <Image Source="fdc.jpg" HeightRequest="240" Aspect="AspectFill"/>
+                    <Label Text="Ćevabdžinice" FontSize="35" TextColor="#f9e3af" FontAttributes="Bold,Italic" Margin="30,-70,0,0" BackgroundColor="#8F000000"/>
+                </StackLayout>
+            </Frame>
+            <Frame Padding="0" CornerRadius="20" HeightRequest="240" Margin="20,0">
+                <StackLayout>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="pastryMore"/>
+                    </StackLayout.GestureRecognizers>
+                    <Image Source="fdp.jpg" HeightRequest="240" Aspect="AspectFill"/>
+                    <Label Text="Pastery Shop" FontSize="35" TextColor="#f9e3af" FontAttributes="Bold,Italic" Margin="30,-70,0,0" BackgroundColor="#8F000000"/>
+                </StackLayout>
+            </Frame>
+            
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.Museums">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Museums" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout HeightRequest="410">
+                    <Image Source="zm.jpg" HeightRequest="410" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#cF9fccfa" Margin="20,-400,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Zemaljski muzej" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Working hours:&#10;Tuesday-Friday: 10 a.m.-7 p.m, Saturday-Sunday: 10am-6pm, The museum is closed on Mondays.&#10;Ticket prices:&#10;Children of preschool age do not pay the entrance free.&#10;Children from 6 to 18 years: 2.00 KM&#10;Students: 2.00 KM&#10;Pensioners: 2.00 KM&#10;Adults: 8.00 KM&#10;Adults with included discount: 6.00 KM (based on concluded contracts with travel agencies)" TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="CenterAndExpand" ColumnSpacing="90">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" WidthRequest="150" TabIndex="10" Clicked="showMap" HorizontalOptions="EndAndExpand" BackgroundColor="#cF9fccfa" CornerRadius="20" Text="See more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" WidthRequest="150" TabIndex="0" Clicked="showMap" HorizontalOptions="EndAndExpand" BackgroundColor="#cF9fccfa" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" />
+                    </Grid>
+                </StackLayout>
+                <StackLayout HeightRequest="410" Margin="0,-6,0,0">
+                    <Image Source="moi.jpg" HeightRequest="410" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#af000000" Margin="20,-400,20,2" Padding="0">
+                        <StackLayout>
+                            <Label Text="Muzej optičkih iluzija" TextColor="white" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Working hours:&#10;EVERY DAY 11:00 a.m. – 7:00 p.m.&#10;The duration of the visit is on average 60 minutes. It is advisable to announce the date od your visit in advance.&#10;Ticket prices: &#10;Ticket for adults: 12KM&#10;Ticker for schoolchilder, students and pensioners: 9KM&#10;Family ticket: 35KM&#10;Group ticket: 7KM&#10;For children under the age od 5, entrance to the Museum is free" TextColor="white" FontAttributes="Bold" FontSize="20" />
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="CenterAndExpand" ColumnSpacing="90">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" WidthRequest="150" TabIndex="11" Clicked="showMap" HorizontalOptions="EndAndExpand" BackgroundColor="#af000000" CornerRadius="20" Text="See more" TextColor="White" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" WidthRequest="150" TabIndex="1" Clicked="showMap" HorizontalOptions="EndAndExpand" BackgroundColor="#af000000" CornerRadius="20" Text="Show on map" TextColor="White" FontAttributes="Bold" TextTransform="None" FontSize="20" />
+                    </Grid>
+                </StackLayout>
+                <StackLayout HeightRequest="410" Margin="0,-6,0,0">
+                    <Image Source="wcm.jpg" HeightRequest="410" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#aF9fccfa" Margin="20,-400,20,2" Padding="0">
+                        <StackLayout>
+                            <Label Text="War Childhood Museum" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Working hours:&#10;Open every day from 11 a.m. to 7 p.m.&#10;Ticket prices:&#10;Children up to 6 years: free &#10;Pupils in announced school visits of BiH schools: 2 KM &#10;Children from 7 to 17 years old outside of announced school visits: 5 KM &#10;Students: 8 KM &#10;Adults: 10 KM &#10;Family ticket: 25 KM &#10;Entrance to the Museum is free every last Thursday of the month, from 5 to 7 p.m." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="CenterAndExpand" ColumnSpacing="90">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" WidthRequest="150" TabIndex="12" Clicked="showMap" HorizontalOptions="EndAndExpand" BackgroundColor="#aF9fccfa" CornerRadius="20" Text="See more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" WidthRequest="150" TabIndex="2" Clicked="showMap" HorizontalOptions="EndAndExpand" BackgroundColor="#aF9fccfa" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20" />
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

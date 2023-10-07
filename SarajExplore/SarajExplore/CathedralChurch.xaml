@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.CathedralChurch"
+             BackgroundImageSource="ccnt2.jfif">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Cathedral Church of the Nativity of the Theotokos" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="20">
+                <Frame BackgroundColor="#BF75a5d8" Padding="0" Margin="20,20,20,0" CornerRadius="8">
+                    <Label Text="This was the first monumental religious building in the city that does not belong to the Muslim religion. When the tower of the temple began to rise above some of the minarets, a group of Muslims plotted to disrupt the grand opening of the Orthodox Church. The conspirators were arrested, and the dedication of the temple was postponed. In the summer of 1872, the Sultan sent troops. The dedication took place solemnly and without incident."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,5,10,10"/>
+                </Frame>
+                <Frame Padding="0"  Margin="20,0" CornerRadius="8">
+                    <Image Source="ccnt3.jpg"/>
+                </Frame>
+                <Frame BackgroundColor="#BF75a5d8" Padding="0"  Margin="20,0" CornerRadius="8">
+                    <Label Text="The Cathedral Church of the Nativity of the Theotokos is the largest Serbian Orthodox church in Sarajevo and one of the largest in the Balkans. It was erected at the request of the Orthodox parish of Sarajevo, with construction taking place between 1863 and 1868. The church is constructed as a three-section basilica inscribed in a cross-shaped plan, and has five domes. The domes are built on the beams; the central one is much larger than the other four side domes. The church is arched by round elements. The small gilded baroque-style belfry is built in front of the entrance. The interior walls are decorated by painted ornaments. In the lower zones of the walls the painted ornaments are simulating the marble stone construction look. Arches and vaults are decorated in ornaments only."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,5,10,10"/>
+                </Frame>
+                <Frame Padding="0"  Margin="20,0" CornerRadius="8">
+                    <Image Source="ccnt4.jpeg"/>
+                </Frame>
+                <Frame BackgroundColor="#BF75a5d8" Padding="0"  Margin="20,0" CornerRadius="8">
+                    <Label Text="The head master for construction was Andreja Damjanov, a man from the Damjanovi-Renzovski family of master builders, masons, painters, carpenters, and stonecutters from the village of Papradište, near Veles. The construction of the church commenced in 1863 when Sarajevo was part of the Bosnia Vilayet, itself a subdivision within the Ottoman Empire. Known locally as the 'New Orthodox Church' to distinguish it from the sixteenth-century church a few hundred meters to the east, it was the first building to break the Muslim monopoly on monumental edifices in Sarajevo. The Saborna Church was greatly damaged during WWI and WWII but not so much so during the Siege of Sarajevo. During the postwar period, it continues to sparkle more beautifully than ever."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,5,10,10"/>
+                </Frame>
+                <Grid HorizontalOptions="CenterAndExpand" ColumnSpacing="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Text="Show more" FontSize="20" WidthRequest="150" HorizontalOptions="CenterAndExpand" 
+                        HeightRequest="50" Margin="0,0,0,20" CornerRadius="20" TextColor="Black" TextTransform="None"
+                        FontAttributes="Bold" Clicked="openMore">
+                        <Button.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#75a5d8"  Offset="0.0"/>
+                                <GradientStop Color="#bad2ec" Offset="0.5"/>
+                                <GradientStop Color="#75a5d8"  Offset="1.0"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button Grid.Column="1" Text="Show on map" FontSize="20" WidthRequest="150" HorizontalOptions="CenterAndExpand" 
+                        HeightRequest="50" Margin="0,0,0,20" CornerRadius="20" TextColor="Black" TextTransform="None"
+                        FontAttributes="Bold" Clicked="openMap">
+                        <Button.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#75a5d8"  Offset="0.0"/>
+                                <GradientStop Color="#bad2ec" Offset="0.5"/>
+                                <GradientStop Color="#75a5d8"  Offset="1.0"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

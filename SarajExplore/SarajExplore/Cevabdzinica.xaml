@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.Cevabdzinica">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Ćevabdžinice" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="0">
+                <!-- Cevabdzinice No.1 -->
+                <StackLayout HeightRequest="360" Spacing="15">
+                    <Image Source="cpf.jpg" HeightRequest="360" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#bffc997c" Margin="20,-355,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Ćevabdžinica Ferhatović 'Petica'" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Ćevabdzinica 'PETICA' Ferhatović is located in the heart of Baščaršija. It was opened in 1984, when the Winter Olympic Games were held in Sarajevo. The Ferhatović family's tradition of ćevap dates back 58 years. Ćevabdžina 'PETICA' is the only one that consistently continues this tradition with its quality, ambience and service." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                            <Label Text="Working hours: Every day: 8am-23pm" FontAttributes="Bold,Italic" TextColor="Black" FontSize="22" Margin="10,0,10,10"/>
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="10" Clicked="openMore" HorizontalOptions="EndAndExpand" BackgroundColor="#bffc997c" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="20" Clicked="openMenu" HorizontalOptions="EndAndExpand" BackgroundColor="#bffc997c" CornerRadius="20" Text="Show menu" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="2" TabIndex="30" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#bffc997c" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                </StackLayout>
+                <!-- Cevabdzinice No.2 -->
+                <StackLayout HeightRequest="420" Spacing="15">
+                    <Image Source="cz.jpg" HeightRequest="420" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#bF9fccfa" Margin="20,-415,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Ćebvabdžinice Željo" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="In 1968, the iconic Željo kebab shop was opened in Sarajevo. Today, with its long-standing tradition, fame and attendance, it marks one of the symbols of Sarajevo in the eyes of tourists and local Sarajevo residents. As many as three branches are full of long queues and patiently waiting for a table for meat delicacies with fast and cordial service. The smell that entices sighs and dishes that make us always return to the best place in Baščaršija." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                            <Label Text="Working hours: Every day: 9am-23pm" FontAttributes="Bold,Italic" TextColor="Black" FontSize="22" Margin="10,0,10,10"/>
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="11" Clicked="openMore" HorizontalOptions="EndAndExpand" BackgroundColor="#bF9fccfa" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="21" Clicked="openMenu" HorizontalOptions="EndAndExpand" BackgroundColor="#bF9fccfa" CornerRadius="20" Text="Show menu" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="2" TabIndex="31" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#bF9fccfa" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                </StackLayout>
+                <!-- Cevabdzinice No.3 -->
+                <StackLayout HeightRequest="400" Spacing="15">
+                    <Image Source="czm.jpg" HeightRequest="400" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#bFffffff" Margin="20,-395,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Ćevabdžinice Zmaj" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Ćevabdzinica 'Zmaj' in Sarajevo's Hrasno settlement opened in 1986, with a small area and only 12 seats, quality of products and services, along with the tradition of the Aljević family, today it is a recognizable Bosnian brand. Its owner, Dževad Aljević, says that in this well-known place in Sarajevo, as well as numerous guests from all over the world, they offer all the specialties from the grill." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                            <Label Text="Working hours: Every day: 8am-23pm" FontAttributes="Bold" TextColor="Black" FontSize="22" Margin="10,0,10,10"/>
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="12" Clicked="openMore" HorizontalOptions="EndAndExpand" BackgroundColor="#bFffffff" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="22" Clicked="openMenu" HorizontalOptions="EndAndExpand" BackgroundColor="#bFffffff" CornerRadius="20" Text="Show menu" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="2" TabIndex="32" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#bFffffff" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                </StackLayout>
+                <!-- Cevabdzinice No.4 -->
+                <StackLayout HeightRequest="450" Spacing="15">
+                    <Image Source="cn.jpg" HeightRequest="450" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#bffdefb0" Margin="20,-445,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Ćevabdžinica Nune" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Back in 1966, one of the oldest kebab shops in Sarajevo, the 'Nune' kebab shop, began to write the pages of its already long and successful history. From the very beginning, it has been in the same location, in the passage across from the city market 'Markale', in the very center of Sarajevo. The first owner of this small, today already rich in tradition, was Salem Ogrešević, who was succeeded by his son Mustafa, better known as Nune, after his retirement." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                            <Label Text="Working hours: Mon-Sut: 8am-21pm; Sun:10am-17pm" FontAttributes="Bold" TextColor="Black" FontSize="22" Margin="10,0,10,10"/>
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="13" Clicked="openMore" HorizontalOptions="EndAndExpand" BackgroundColor="#bffdefb0" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="23" Clicked="openMenu" HorizontalOptions="EndAndExpand" BackgroundColor="#bffdefb0" CornerRadius="20" Text="Show menu" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="2" TabIndex="33" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#bffdefb0" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

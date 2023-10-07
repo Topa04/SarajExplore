@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.PastryShop">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Pastry Shops" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="0">
+                <!-- PastryShop No.1 -->
+                <StackLayout HeightRequest="320" Spacing="15">
+                    <Image Source="ss.jpg" HeightRequest="320" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#9Ff7fea0" Margin="20,-315,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Pastry shop Saraj" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Patisserie 'Saraj' is a family tradition of over 80 years! We offer you various types of treats, cakes, tarts, dry cakes, ice cream and sweet drinks. The facility is located in the heart of Baščaršija near Sebilje and is modernly equipped according to all catering standards." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                            <Label Text="Working hours: Every day: 7am- 11pm" FontAttributes="Bold,Italic" TextColor="Black" FontSize="22" Margin="10,0,10,10"/>
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="10" Clicked="openMore" HorizontalOptions="EndAndExpand" BackgroundColor="#9Ff7fea0" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="20" Clicked="openMenu" HorizontalOptions="EndAndExpand" BackgroundColor="#9Ff7fea0" CornerRadius="20" Text="Show menu" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="2" TabIndex="30" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#9Ff7fea0" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                </StackLayout>
+                <!-- PastryShop No.2 -->
+                <StackLayout HeightRequest="320" Spacing="15">
+                    <Image Source="sr.jpg" HeightRequest="320" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#aF9fccfa" Margin="20,-320,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Pastry shop Ramis" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Pastry shop Ramis is the oldest pastry shop in Bosnia and Herzegovina. For more than 100 years, the Nezirović family has been sugaring Slatko čoša and maintaining the tradition of this place, which is considered the gateway to Baščaršija." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                            <Label Text="Working hours: Every day: 9am- 10pm" FontAttributes="Bold,Italic" TextColor="Black" FontSize="22" Margin="10,0,10,10"/>
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="11" Clicked="openMore" HorizontalOptions="EndAndExpand" BackgroundColor="#aF9fccfa" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="21" Clicked="openMenu" HorizontalOptions="EndAndExpand" BackgroundColor="#aF9fccfa" CornerRadius="20" Text="Show menu" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="2" TabIndex="31" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#aF9fccfa" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                </StackLayout>
+                <!-- PastryShop No.3 -->
+                <StackLayout HeightRequest="400" Spacing="15">
+                    <Image Source="cs.jpg" HeightRequest="400" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#aFffffff" Margin="20,-395,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Cream shop" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="The friendly staff of the Cream Shop confectionery will serve you some of the many cakes and hot or cold drinks. In the summer, ice cream is inevitable, and in the winter there are dry cakes and other treats. During the warmer days when the garden is active, guests bathed in the sun will have a complete atmosphere with a view of the Baščaršija Mosque and will feel the spirit and rhythm of Baščaršija." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                            <Label Text="Working hours: Every day: 7am- 11pm" FontAttributes="Bold" TextColor="Black" FontSize="22" Margin="10,0,10,10"/>
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="12" Clicked="openMore" HorizontalOptions="EndAndExpand" BackgroundColor="#aFffffff" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="22" Clicked="openMenu" HorizontalOptions="EndAndExpand" BackgroundColor="#aFffffff" CornerRadius="20" Text="Show menu" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="2" TabIndex="32" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#aFffffff" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                </StackLayout>
+                <!-- PastryShop No.4 -->
+                <StackLayout HeightRequest="340" Spacing="15">
+                    <Image Source="bs.jpg" HeightRequest="340" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#affce57c" Margin="20,-335,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Baklava shop" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Our story began about 20 years ago, when Bedrija diligently cooked and prepared the most delicious traditional dishes for a select group of customers. When her son Vehid joined her, together they created the baklava.ba brand and then opened a Baklava shop in the heart of Baščaršija." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                            <Label Text="Working hours: Every day: 8am- 11pm" FontAttributes="Bold" TextColor="Black" FontSize="22" Margin="10,0,10,10"/>
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="13" Clicked="openMore" HorizontalOptions="EndAndExpand" BackgroundColor="#affce57c" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="23" Clicked="openMenu" HorizontalOptions="EndAndExpand" BackgroundColor="#affce57c" CornerRadius="20" Text="Show menu" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="2" TabIndex="33" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#affce57c" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                </StackLayout>
+                <!-- PastryShop No.5 -->
+                <StackLayout HeightRequest="420" Spacing="15">
+                    <Image Source="psc.jpg" HeightRequest="420" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#affeb3b3" Margin="20,-415,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Pastry shop Carigrad " TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Slastičarna Carigrad is a pastry shop with a long tradition, since 1950 it has been offering its guests a large number of delicious cakes, tarts, ice cream and other delicacies. Constantinople extends over two floors, and right at the entrance you will be greeted by a multitude of delicious delicacies and the dilemma may be about the choice. If you can't decide, the staff's recommendation is to try one of the specialties of the house, three-year-old cakes or tufahija..." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                            <Label Text="Working hours: Every day: 7am- 11pm" FontAttributes="Bold" TextColor="Black" FontSize="22" Margin="10,0,10,10"/>
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="14" Clicked="openMore" HorizontalOptions="EndAndExpand" BackgroundColor="#affeb3b3" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="24" Clicked="openMenu" HorizontalOptions="EndAndExpand" BackgroundColor="#affeb3b3" CornerRadius="20" Text="Show menu" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="2" TabIndex="34" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#affeb3b3" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                </StackLayout>
+                <!-- PastryShop No.6 -->
+                <StackLayout HeightRequest="360" Spacing="15">
+                    <Image Source="cpsb.jpg" HeightRequest="360" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#9Fffffff" Margin="20,-355,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Caffe Pastry shop Badem" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Nakon šetnje po Sarajevskom susretu kulture, brojni posjetitelji zastanu u ovoj slastičarnici. Većina posjetitelja Caffe slastičarne Badem ističe da se ovdje nude dobre kremšnite, baklave i kolači. Bilo bi lijepo uživati u izvrsnom espressu. Spektakularna usluga je nešto do čega je ovim ugostiteljima stalo. Prema mišljenju gostiju, cijene su atraktivne." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                            <Label Text="Working hours: Every day: 7am- 11pm" FontAttributes="Bold" TextColor="Black" FontSize="22" Margin="10,0,10,10"/>
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="15" Clicked="openMore" HorizontalOptions="EndAndExpand" BackgroundColor="#9Fffffff" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="25" Clicked="openMenu" HorizontalOptions="EndAndExpand" BackgroundColor="#9Fffffff" CornerRadius="20" Text="Show menu" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="2" TabIndex="35" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#9Fffffff" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                </StackLayout>
+                <!-- PastryShop No.7 -->
+                <StackLayout HeightRequest="320" Spacing="15">
+                    <Image Source="psld.jpg" HeightRequest="320" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#affed1e7" Margin="20,-315,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Pastry shop La Delicia" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="Our service is aimed at customer satisfaction, and we strive to provide the best experience and solution for their needs. Our pastry shop is a place where the pleasure of sweet delicacies turns into an unforgettable experience that will be remembered for many years. " TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                            <Label Text="Working hours: Every day: 7am- 11pm" FontAttributes="Bold" TextColor="Black" FontSize="22" Margin="10,0,10,10"/>
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="16" Clicked="openMore" HorizontalOptions="EndAndExpand" BackgroundColor="#affed1e7" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="26" Clicked="openMenu" HorizontalOptions="EndAndExpand" BackgroundColor="#affed1e7" CornerRadius="20" Text="Show menu" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="2" TabIndex="36" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#affed1e7" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                </StackLayout>
+                <!-- PastryShop No.8 -->
+                <StackLayout HeightRequest="400" Spacing="15">
+                    <Image Source="psm.jpg" HeightRequest="400" Aspect="AspectFill"/>
+                    <Frame BackgroundColor="#aFfbfba0" Margin="20,-395,20,0" Padding="0">
+                        <StackLayout>
+                            <Label Text="Pastry shop Mrvica" TextColor="Black" FontSize="30" FontAttributes="Bold,Italic" Margin="10,5,0,10"/>
+                            <Label Margin="10,0,10,5" Text="We bake everything as fresh as possible. The patisserie, tarts, cakes and savouries baked in our shops are made in kitchens open to view  because we want you to be able to see what we make and how we make it. We also provide food for parties, lunches, weddings, and business functions. So tiny, so cute, so French! Everything on the menu is heartwarming, starting from our selection of breakfast, salads, soups and sandwiches." TextColor="Black" FontAttributes="Bold" FontSize="20" />
+                            <Label Text="Working hours: Every day: 7am- 11pm" FontAttributes="Bold" TextColor="Black" FontSize="22" Margin="10,0,10,10"/>
+                        </StackLayout>
+                    </Frame>
+                    <Grid HorizontalOptions="Center" ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" TabIndex="17" Clicked="openMore" HorizontalOptions="EndAndExpand" BackgroundColor="#aFfbfba0" CornerRadius="20" Text="Show more" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="1" TabIndex="27" Clicked="openMenu" HorizontalOptions="EndAndExpand" BackgroundColor="#aFfbfba0" CornerRadius="20" Text="Show menu" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                        <Button Grid.Column="2" TabIndex="37" Clicked="openMap" HorizontalOptions="EndAndExpand" BackgroundColor="#aFfbfba0" CornerRadius="20" Text="Show on map" TextColor="Black" FontAttributes="Bold" TextTransform="None" FontSize="20"/>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

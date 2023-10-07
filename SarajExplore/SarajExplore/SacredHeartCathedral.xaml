@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.SacredHeartCathedral"
+             BackgroundImageSource="shc2.jpg">
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Sacred Heart Cathedral" TextColor="White" HorizontalTextAlignment="Center" FontSize="22" FontAttributes="Bold" Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="20">
+                <Frame BackgroundColor="#CFf0e4ae" Padding="0" Margin="20,20,20,0" CornerRadius="8">
+                    <StackLayout>
+                        <Label Text="	•	INFO	•	"
+                               HorizontalTextAlignment="Center" FontSize="30" TextColor="Black" FontAttributes="Bold" Margin="10,0"/>
+                        <Label Text="Working hours: &#10;Mon: closed; &#10;Summer period: 9am-17pm; &#10;Winter period: 9am-15pm"
+                            FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,0,10,5"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="#CFf0e4ae" Padding="0" Margin="20,0" CornerRadius="8">
+                    <Label Text="Fronted with twin-spired clock towers and rose windows above the stone portal, this neo-Gothic 1889 Catholic cathedral has a colourful interior and fine stained-glass windows above a finely carved high altar. "
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,5,10,10"/>
+                </Frame>
+                <Frame Padding="0" Margin="20,0,20,10" CornerRadius="8">
+                    <Image Source="shc3.jpg"/>
+                </Frame>
+                <Frame BackgroundColor="#CFf0e4ae" Padding="0" Margin="20,0" CornerRadius="8">
+                    <Label Text="The Sacred Heart Cathedral is a Catholic church in Sarajevo, it is the largest cathedral in Bosnia and Herzegovina. The cathedral is located in the city's Old Town district. Sacred Heart Cathedral was built in honor of the Sacred Heart of Jesus, an important Catholic concept. The building is in the Neo-Gothic style, with Romanesque Revival elements. The building was awarded to the Viennese contractor Baron Karl Schwarz with supervising architect Josip Vancaš. He modeled it after the Notre-Dame in Dijon (France). Work began on 25 August 1884, and was completed on 9 November 1887. The building was damaged during the Siege of Sarajevo, but not completely destroyed, and the damage has since been repaired."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,5,10,10"/>
+                </Frame>
+                <Frame Padding="0" Margin="20,0,20,10" CornerRadius="8">
+                    <Image Source="shc4.jpg"/>
+                </Frame>
+                <Frame BackgroundColor="#CFf0e4ae" Padding="0" Margin="20,0" CornerRadius="8">
+                    <Label Text="The building is often considered as a symbol of the city: The design above the door to the cathedral is part of the flag and seal of Sarajevo Canton and the Romanesque towers are featured on the flag and coat of arms of Sarajevo. The cathedral is 41.9 meters long and 21.3 meter wide. Cahtedral have two bell towers are 43.2 m high. Above the portal is an octagonal rosette and a statue of the Sacred Heart. The interior of the church is richly decorated and it was the famous Italian-German painter, Alexander Maximilian Seitz, who did the frescos. There is also a statue in front in honor of Pope John Paul II, who visited Sarajevo in 1997, soon after the war had ended, to send a message of peace and tolerance from BiH’s capital city."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="25" TextColor="Black" FontAttributes="Bold" Margin="10,5,10,10"/>
+                </Frame>
+                <Grid HorizontalOptions="CenterAndExpand" ColumnSpacing="40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Text="Show more" FontSize="20" WidthRequest="150" HorizontalOptions="CenterAndExpand" 
+                        HeightRequest="50" Margin="0,0,0,20" CornerRadius="20" TextColor="Black" TextTransform="None"
+                        FontAttributes="Bold" Clicked="openMore">
+                        <Button.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#E1C85D"  Offset="0.0"/>
+                                <GradientStop Color="#f0e4ae" Offset="0.5"/>
+                                <GradientStop Color="#E1C85D"  Offset="1.0"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button Grid.Column="1" Text="Show on map" FontSize="20" WidthRequest="150" HorizontalOptions="CenterAndExpand" 
+                        HeightRequest="50" Margin="0,0,0,20" CornerRadius="20" TextColor="Black" TextTransform="None"
+                        FontAttributes="Bold" Clicked="openMap">
+                        <Button.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#E1C85D"  Offset="0.0"/>
+                                <GradientStop Color="#f0e4ae" Offset="0.5"/>
+                                <GradientStop Color="#E1C85D"  Offset="1.0"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xct:Popup  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SarajExplore.RentCarPopup"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    Color="Transparent"
+    IsLightDismissEnabled = "False"
+    Size="350,650">
+    <ScrollView>
+        <Frame Padding="0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" CornerRadius="10" BackgroundColor="#e2eff3">
+            <StackLayout Spacing="0">
+                    <Label x:Name="naslov" Text="Rent a Car" TextColor="Black" FontSize="30" Margin="10,5" FontAttributes="Bold"/>
+                    <Label FontSize="20" Margin="10,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="If you want to rent a car we recommend going on this web site – "
+                                  TextColor="Black"/>
+                                <Span Text="Cheap Car Hire Sarajevo - Rentalcars.com ." TextColor="blue">
+                                    <Span.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding TapCommand}"
+                                                          CommandParameter="https://www.rentalcars.com/"/>
+                                    </Span.GestureRecognizers>
+                                </Span>
+                                <Span Text=" This web site presents you various offers of different companies operating ih the area of Sarajevo."
+                                  TextColor="Black"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Image Source="rentalcars.jpg" HeightRequest="75" Aspect="AspectFill" Margin="10">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="rentalCars"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label FontSize="20" Margin="10,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="If you rent a car and during use there is a need for assistance on the road, we offer you the number of the Bosnian Auto-Motorcycle Club, which offers roadside assistance services – call " TextColor="black"/>
+                                <Span Text="1282" TextColor="Red"/>
+                            <Span Text=" or " TextColor="black"/>
+                            <Span Text="1325 " TextColor="Red"/>
+                            <Span Text="or click on image to open their website" TextColor="Black"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                <Image Source="bihamk.jpeg" HeightRequest="90" Aspect="AspectFill" Margin="10">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="bihamk"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                <Button Clicked="exitPopup" Text="Back" FontSize="20" TextColor="Black" FontAttributes="Bold" TextTransform="None"  Margin="20,20" CornerRadius="10" HorizontalOptions="CenterAndExpand" WidthRequest="150">
+                    <Button.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#b5bfc2"  Offset="0.0"/>
+                            <GradientStop Color="#cbd7db" Offset="0.5"/>
+                            <GradientStop Color="#b5bfc2"  Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </StackLayout>
+        </Frame>
+    </ScrollView>
+</xct:Popup>
